@@ -1,0 +1,91 @@
+table {
+    font-size: .5em;
+    padding: .5em 0;
+    border-collapse: collapse;
+    width: 100%;
+    display: block;
+    box-sizing: inherit;
+}
+
+th, th:first-of-type {
+    border-bottom: 1px solid #999;
+    font-weight: bold;
+}
+
+.border table, .border th, .border td {
+    border: 1px solid #999;
+}
+
+.striped-even tr:nth-child(even) {
+    background-color: $navFixedBg;
+}
+
+.striped-odd tr:nth-child(odd) {
+    background-color: $navFixedBg;
+}
+
+.hover-row tr:hover {
+    background-color: $navHov;
+}
+
+.hover-cell td:hover, .hover-cell th:hover {
+    background-color: $navHov;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+
+/*******Media Queries ********/
+
+
+/* Mobile */
+
+@media screen and (min-width: 400px) {
+    table,
+    th,
+    tr,
+    td {
+        font-size: .95em;
+        padding: .7em;
+    }
+}
+
+
+/* mobile landscape */
+
+@media screen and (min-width: 600px) and (orientation: landscape) {
+    table,
+    th,
+    tr,
+    td {
+        font-size: 1em;
+        padding: .9em;
+    }
+}
+
+
+/* Medium */
+
+@media screen and (min-width: 768px) {
+    table,
+    th,
+    tr,
+    td {
+        padding: 1em;
+        max-width: 80%;
+    }
+}
+
+
+/* Large */
+
+@media screen and (min-width: 1200px) {
+    table,
+    th,
+    tr,
+    td {
+        padding: 1.5em;
+    }
+}

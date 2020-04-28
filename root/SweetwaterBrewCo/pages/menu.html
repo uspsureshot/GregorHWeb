@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sweetwater Brewing Co</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="../../css/freshplate.css" type="text/css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="../scripts/freshplate.js"></script>
+
+    <script>
+        $(function () {
+            $("#tabs").tabs();
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="side_nav" style="left: -500px;">
+            <div class="side_nav_close"></div>
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="events.html">EVENTS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <a class="menu side_nav_btn"><i class="material-icons">&#xE5D2;</i></a>
+        <h1 class="fineHead parallax-header">Menu</h1>
+        <div class="parallax3">
+            <div class="boxClearLg" id="tabs">
+                <ul>
+                    <li><a href="#appetizers">Appetizers</a></li>
+                    <li><a href="#entrees">Entrees</a></li>
+                    <li><a href="#specials">Specials</a></li>
+                    <li><a href="#beer-list">Beers</a></li>
+                </ul>
+                <div class="tab-content" id="appetizers">
+                    <table class="hover-row appetizers">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Chili Lime Fries</td>
+                                <td>Sweet potato fries with chili powder, lime zest, and spicy ranch. 5.50
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Double Truffle Fries Fries</td>
+                                <td>Parmesan, chopped garlic, rosemary, white truffle oil, and truffle aioli. 6.25
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Beer Pretzels</td>
+                                <td>We get ’em local from San Diego Pretzel Company. Beer spritz, spice-rubbed, with spicy mango mustard and beer cheese dip. 8.95
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Spicy Hummus and Flat Bread</td>
+                                <td>Cilantro, jalapeño, Kalamata olives, roasted red peppers, red onion, and almonds. 11.95
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Chili Lime Fries</td>
+                                <td>Sweet potato fries with chili powder, lime zest, and spicy ranch. 5.50
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-content" id="entrees">
+                    <table class="hover-row entrees">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Beer Braised Ribs</td>
+                                <td>A small plate of four baby back ribs, beer-braised then grilled with our house spice rub. Topped with Asian BBQ sauce, cashews, green onions, and served with a sweet and stinky fry skillet. 14.95
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Spicy Tofu Curry</td>
+                                <td>Our curry is house-made with locally sourced all natural Thai green curry paste, and simmered in coconut milk with mushrooms, pea shoots, spinach, citrus-glazed crispy organic tofu, and long grain rice. 16.95
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Fish n Chips</td>
+                                <td>Battered Alaskan Cod, caper remoulade, and house-made broccoli slaw. 15.95
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Farmhouse Burger</td>
+                                <td>California-grown all natural grass-fed beef, peppered beer-braised smoked pork belly, fried Chino Valley cage-free egg, gruyere, lettuce, tomato, onion, chipotle ale mayo, with fries. 14.95
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>West Coast Carnitas</td>
+                                <td>DIP Mosaic Session IPA-brined pork carnitas, spicy Gochujang au jus for dipping, with smashed avocado, jalapeño, habanero jack, cilantro, pickled onion, and fennel on a French roll with fries. 14.95
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-content" id="specials">
+                    <h3>Happy Hour</h3>
+                    <h4>Mon-Fri 3:00pm-6:00pm</h4>
+                    <p>Pints and Flights: $5. All appetizers half off!</p>
+                </div>
+                <div class="tab-content" id="beer-list">
+                    <table class="hover-row beer-list">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>ABV</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Aurora Hoppyalis IPA</td>
+                                <td>7.0%</td>
+                                <td>Robust flavors and aromas of tropical fruit, pine, and tangerine linger through a dry, crisp finish.</td>
+                            </tr>
+                            <tr>
+                                <td>Red Trolley Ale</td>
+                                <td>5.8%</td>
+                                <td>Caramelized malts create a deep copper color and toffee flavo with hints of raisins and currants.</td>
+                            </tr>
+                            <tr>
+                                <td>Tower 10 IPA</td>
+                                <td>7.0%</td>
+                                <td>Intense pine and grapefruit notes with vibrant citrus aromas that are balanced by a toasted malt backbone.</td>
+                            </tr>
+                            <tr>
+                                <td>Wreck Alley Imperial Stout</td>
+                                <td>9.0%</td>
+                                <td>Rich layers of dark chocolate, toffee, and espresso-like roast.</td>
+                            </tr>
+                            <tr>
+                                <td>Stone Delicious IPA</td>
+                                <td>7.7%</td>
+                                <td>Lemondrop and El Dorado hops combine to bring on a magnificent lemon candy-like flavor that’s balanced by hop spice. </td>
+                            </tr>
+                            <tr>
+                                <td>Racer 5 IPA</td>
+                                <td>7.5%</td>
+                                <td>A full bodied beer brewed with malted barley, wheat, and crystal malts.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h5 class="fineHead">Sherry Guo &copy; 2017</h5>
+        <h6>This site was made using the <a href="http://freshplate.servicefocuseddesign.com">Freshplate</a> framework.</h6>
+    </footer>
+</body>
+
+</html>

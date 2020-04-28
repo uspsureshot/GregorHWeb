@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel='icon' type='image/gif' href='images/SpaceFreshIco.gif' />
+	<link rel="stylesheet" type="text/css" href='../../css/freshplate.css' />
+	<link rel="stylesheet" type="text/css" href='css/main.css' />
+	<title>Fresh Plate Contact Form</title>
+	<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+ <nav>
+       <div class="responsive_nav_icon"></div>
+       <ul class="responsive_nav top_fixed_nav" >
+            <li><a href="../../index.html">HOME</a></li>
+            <li><a href="index.html">Space Fresh</a></li>
+            <li><a href="SpaceProj.html">Projects</a></li>
+            <li><a href="SpaceContact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div id='top'></div>
+    <main id='contactForm' class='container centerSection'>
+       <section class='parallax'>
+        <h2 class='tx-cntr iRed'>Contact Form</h2>
+
+        <form method='post' class='centerSection' action="http://www.yourwebhosting.com/scripts/formemail.bml">
+            <input type="hidden" name="my_email" value="webmaster@servicefd.com"><!--Required for iPage.com server script -->
+            <fieldset>
+               <legend>Your Details</legend>
+               	<div class='row'>
+                <label for='fname' class='col-ml-2 col-tb-1 col-lg-1'>First Name</label>
+                <input class='col-tb-4 col-lg-4' type='text' id='fname' name='fname' placeholder='First Name' >
+
+                <label class='col-ml-2 col-tb-1 col-lg-1' for='lname'>Last Name</label>
+                <input class='col-tb-4 col-lg-4' type='text' id='lname' name='lname' placeholder='Last Name' >
+				</div>
+				<div class='row'>
+                  <label class='tx-right col-tb-1 col-lg-1' for='Phone'>Phone</label>
+                <input class='col-tb-4 col-lg-4' type='tel' id='Phone' name='Phone' placeholder='xxx5551212' >
+                <label class='tx-right col-tb-1 col-lg-1' for='email'>eMail</label>
+                <input class='col-tb-4 col-lg-4' type='email' id='email' name='email' placeholder='YourEmail@email.com' >
+				</div>
+            </fieldset>
+            <fieldset>
+               <legend>Feedback</legend>
+               <div class='row'>
+                <label class='col-mp-2 col-ml-2 col-lg-2' for='comments'>Comments</label>
+                </div>
+                <textarea id='comments' class='' rows='8' placeholder="Leave your comments here"></textarea>
+
+            </fieldset>
+            <div id="myButtons">
+                <button class='btnMed btn3d-rnd-crnr' type="submit" value="Submit">Submit</button>
+                <button class='btnMed btn3d-rnd-crnr' type="reset" value="Clear Form">Clear Form</button>
+            </div>
+            <input type="hidden" name="thankyou_url" value="http://freshplate.servicefocuseddesign.com/root/SpaceFresh/ThankYou.html">
+        <!-- 	Not this will need to be moved to the correct directory. -->
+        </form>
+ <!--end main section -->
+   </section>
+  <footer class='row'><div id='ftr1' class='col-mp-3 col-ml-3 col-tb-3 col-lg-3'><p class='tx-left'>&copy;&nbsp;SpaceFresh 2017</p></div><div id='ftr2' class='col-mp-6 col-ml-6 col-tb-6 col-lg-6'><p class='tx-cntr'><a class='btnFlat-rnd-crnr button' href='#top'>To Top</a></p></div><div id='ftr3' class='col-mp-3 col-ml-3 col-tb-3 col-lg-3 onRight'><a href='http://freshplate.servicefocuseddesign.com/'>
+	<img src='images/faviconPlate.png' alt='FresPlate Logo'>&nbsp;Powered by FreshPlate</a></div></footer>
+
+    </main>
+</body>
+<script src='../../scripts/freshplate.js'></script>
+</html>

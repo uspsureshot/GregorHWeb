@@ -1,0 +1,116 @@
+/* Button styles for use globally */
+
+button, a.button {
+	display:inline-block;
+	padding: 15px;
+	margin: .3em;
+	font: bolder 1.2em/1.2 $robot;
+	&:hover {
+	background-color: $btnHover;
+	}
+	&:active {
+		color: $anchorLit;
+		background-color: $btnActive;
+		border: solid 2px $btnBrdrLite;
+	}
+}
+/*Button Styles */
+.btnStd {
+			background-color: $btnColor;
+	}
+
+.btnFlat {
+	border: solid 2px $btnBrdrDrk;
+	background-color: inherit;
+	&:active {
+		border:solid 2px $btnBrdrLite;
+	}
+}
+.btnFlat-rnd-crnr {
+	border: solid 2px $btnBrdrDrk;
+	border-radius: .5em;
+	background-color:inherit;
+	&:active {
+		border:solid 2px $btnBrdrLite;
+	}
+}
+
+
+
+.btn3d {
+	background-color: $btnColor;
+	border-top: solid 10px $btnBrdrLite;
+	border-left: solid 10px $btnBrdrLite;
+	border-bottom: solid 10px $btnBrdrDrk;
+	border-right: solid 10px $btnBrdrDrk;
+	&:active {
+	border-top: solid 10px $btnBrdrDrk;
+	border-left: solid 10px $btnBrdrDrk;
+	border-bottom: solid 10px $btnBrdrLite;
+	border-right: solid 10px $btnBrdrLite;
+	}
+
+}
+.btn3d-rnd {
+	background-color: $btnColor;
+	border-top: solid 10px $btnBrdrLite;
+	border-left: solid 10px $btnBrdrLite;
+	border-bottom: solid 10px $btnBrdrDrk;
+	border-right: solid 10px $btnBrdrDrk;
+	border-radius: 50%;
+	&:active {
+	border-top: solid 10px $btnBrdrDrk;
+	border-left: solid 10px $btnBrdrDrk;
+	border-bottom: solid 10px $btnBrdrLite;
+	border-right: solid 10px $btnBrdrLite;
+	}
+}
+
+.btn3d-rnd-crnr {
+	background-color: $btnColor;
+	border-top: solid 5px $btnBrdrLite;
+	border-left: solid 5px $btnBrdrLite;
+	border-bottom: solid 5px $btnBrdrDrk;
+	border-right: solid 5px $btnBrdrDrk;
+	border-radius: .5em;
+	&:active {
+	border-top: solid 5px $btnBrdrDrk;
+	border-left: solid 5px $btnBrdrDrk;
+	border-bottom: solid 5px $btnBrdrLite;
+	border-right: solid 5px $btnBrdrLite;
+	}
+}
+
+/* Button Sizes */
+
+.btnTinySq {
+	font:bolder .75rem $robot;
+	margin:.5rem;
+	padding: 2px;
+	width: 6rem;
+	height: 6rem;
+}
+
+.btnMed {
+	font:bolder 1rem $robot;
+	margin:.5rem;
+	padding: 2px;
+	width:10rem;
+	height: 4rem;
+}
+
+.btnLrg {
+	font:bolder 1.6rem $robot;
+	margin:.5rem;
+	padding: 2px;
+	width:16rem;
+	height: 5rem;
+}
+.btnHuge {
+	font: bolder 2.4em $robot;
+	margin:.5rem;
+	padding:.25rem;
+	width: 50%;
+	height: 7rem;
+}
+

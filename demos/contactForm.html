@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href='../css/freshplate.css' />
+	<title>Fresh Plate Contact Form</title>
+</head>
+<style>
+    main{
+        
+    }
+    
+    #myButtons{
+        text-align: center;
+    }
+
+</style>
+
+<body>
+    <main>
+        <h2 class='tx-cntr'>Sample Contact Form</h2>
+        <form method='post' class='centerSection'action="http://www.serviceFocusedDesign.com/scripts/formemail.bml">
+            <input type="hidden" name="my_email" value="webmaster@servicefd.com"><!--Required for iPage.com server script -->
+            <fieldset>
+               <legend>Your Details</legend>
+                <label for='fname' class=''>First Name</label>
+                <input class='' type='text' id='fname' name='fname' placeholder='First Name' >
+
+                <label class='' for='lname'>Last Name</label>
+                <input class='' type='text' id='lname' name='lname' placeholder='Last Name' >
+
+                <label class='' for='email'>eMail</label>
+                <input class='' type='email' id='email' name='email' placeholder='YourEmail@email.com' >
+            </fieldset>
+            <fieldset>
+               <legend>Feedback</legend>
+                <label class='' for='comments'>Comments</label>
+                <textarea id='comments' rows='8' placeholder="Leave your comments here"></textarea>
+            </fieldset>
+            <div id="myButtons">
+                <button class='btnMed btnFlat-rnd-crnr' type="submit" value="Submit">Submit</button>
+                <button class='btnMed btnFlat-rnd-crnr' type="reset" value="Clear Form">Clear Form</button>
+            </div>
+            <input type="hidden" name="thankyou_url" value="http://freshplate.servicefocuseddesign.com/plugin/ThankYou.html">
+        <!-- 	Not this will need to be moved to the correct directory. -->
+        </form>
+ <!--end main section -->
+    </main>
+</body>
+</html>

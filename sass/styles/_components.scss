@@ -1,0 +1,90 @@
+/*** Styles for the different CSS/JS Components ********/
+
+/* Styles for Tabs*/
+
+.hTabs{
+    min-width: 320px;
+    max-width: 800px;
+    margin: 0 auto;
+    border: solid 1px #ccc;
+}
+.tab_menu{
+    
+    button{
+        color: #434955;
+        border: none;
+        margin:0.5em;
+        cursor: pointer;
+        text-align: center;
+        background-color: #fff;
+        &:hover{
+            background-color: #999;
+            color: #fff;
+        }
+        }
+}
+
+.tab_menu .activeTab{
+    border-bottom: solid 1px #999;
+}
+
+[id^="tab_content"]{
+    clear: both;
+    display: none;
+    padding:5px;
+    
+}
+
+/* Styles for Accordion Content*/
+.accordion{
+        max-width: 960px;
+        margin: 5% auto;
+    &:last-child{
+        border-bottom: solid 1px #ccc;
+        }
+    }
+
+.accordion-header{
+    border: solid 1px #ccc;
+    border-bottom:0;
+    height: 40px;
+    padding: 0 15px;
+    line-height: 40px;
+    color: #434955;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #fdfdfd;
+    -webkit-tap-highlight-color: transparent;
+    transition: background .2s linear;
+    &:hover{
+        background-color: #999;
+            color: #fff;
+    }
+    &:after{
+        content: "\e313"; //<i class="material-icons">&#xE316;</i>
+        font-family: 'Material Icons';
+        float: right;
+        font-size: 18px;
+        transition: all .2s linear;
+    }
+}
+
+.accordionActive.accordion-header{
+    background-color: #999;
+    color: #fff;
+    margin-bottom: 0;
+    &:after{
+        content: "\e316"; //<i class="material-icons">&#xE316;</i>
+        font-family: 'Material Icons';
+    }
+}
+.accordion-panel{
+    padding: 0 .5em;
+    border: solid 1px #ccc;
+    border-bottom: 0;
+    background-color: #fff;
+    color: #434955;
+    display: none;
+}
+
+    

@@ -1,0 +1,87 @@
+/* GRID SYSTEM */
+/* 960px wide grid - 12 column grid solution */
+/* Each column width - 100%/12 = 8.33% */
+/* All rows should be wrapped in a div */
+/* All columns should be wrapped in a 'row' div and add up to 12 per row */
+
+/* For mobile portrait phones all columns will take 100% */
+[class*="col-"] {
+    width: 100%;
+}
+.col-mp-1 {width:8.33%;float:left;}
+.col-mp-2 {width: 16.66%;float:left;}
+.col-mp-3 {width: 25%;float:left;}
+.col-mp-4 {width: 33.33%;float:left;}
+.col-mp-5 {width: 41.66%;float:left;}
+.col-mp-6 {width: 50%;float:left;}
+.col-mp-7 {width: 58.33%;float:left;}
+.col-mp-8 {width: 66.66%;float:left;}
+.col-mp-9 {width: 75%;float:left;}
+.col-mp-10 {width: 83.33%;float:left;}
+.col-mp-11 {width: 91.66%;float:left;}
+.col-mp-12 {width: 100%;float:none;}
+
+.row:after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*******Media Queries ********/
+
+/* Mobile landscape */
+@media screen and (min-width: 600px)
+and (orientation : landscape){
+[class*="col-"] {
+	float:left;
+}
+.col-ml-1 {width:8.33%;}
+.col-ml-2 {width: 16.66%;}
+.col-ml-3 {width: 25%;}
+.col-ml-4 {width: 33.33%;}
+.col-ml-5 {width: 41.66%;}
+.col-ml-6 {width: 50%;}
+.col-ml-7 {width: 58.33%;}
+.col-ml-8 {width: 66.66%;}
+.col-ml-9 {width: 75%;}
+.col-ml-10 {width: 83.33%;}
+.col-ml-11 {width: 91.66%;}
+.col-ml-12 {width: 100%;}
+}
+
+/* Tablet portrait */
+@media screen and (min-width: 768px){
+[class*="col-"] {
+	float:left;
+}
+.col-tb-1 {width:8.33%;}
+.col-tb-2 {width: 16.66%;}
+.col-tb-3 {width: 25%;}
+.col-tb-4 {width: 33.33%;}
+.col-tb-5 {width: 41.66%;}
+.col-tb-6 {width: 50%;}
+.col-tb-7 {width: 58.33%;}
+.col-tb-8 {width: 66.66%;}
+.col-tb-9 {width: 75%;}
+.col-tb-10 {width: 83.33%;}
+.col-tb-11 {width: 91.66%;}
+.col-tb-12 {width: 100%;}
+
+}
+
+/* Large screens */
+@media screen and (min-width: 1200px){
+.col-lg-1 {width:8.33%;}
+.col-lg-2 {width: 16.66%;}
+.col-lg-3 {width: 25%;}
+.col-lg-4 {width: 33.33%;}
+.col-lg-5 {width: 41.66%;}
+.col-lg-6 {width: 50%;}
+.col-lg-7 {width: 58.33%;}
+.col-lg-8 {width: 66.66%;}
+.col-lg-9 {width: 75%;}
+.col-lg-10 {width: 83.33%;}
+.col-lg-11 {width: 91.66%;}
+.col-lg-12 {width: 100%;}
+
+}

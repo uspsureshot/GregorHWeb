@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FreshPlate Contact</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="../css/freshplate.css" type="text/css" rel="stylesheet" />
+    
+    <link href="../css/mystyles.css" type="text/css" rel="stylesheet" />
+    
+    <script
+     src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  
+  <link href="../images/faviconPlate.png" rel="icon" type="image/png">
+  </head>
+  
+<body>
+ 
+   <header id="top">
+    <section id="header" class="centerSection">
+    <a href="../index.html"><img class="responsiveImg pagesImg" src="../images/FP-logo-white.png" alt="logo" /></a>
+    
+    
+    
+    
+     
+    </section>
+    </header>
+      <nav >
+       <div class="responsive_nav_icon"></div>
+      <ul class="responsive_nav" >
+            <li><a href="../index.html" class="active_nav">HOME</a></li>
+            <li><a href="about.htm">ABOUT</a></li>
+            <li><a href="demos.html">DEMOS</a></li>
+            <li><a href="documents.html">DOCUMENTATION</a></li>
+            <li><a href="instagram.html">ADD INSTAGRAM</a></li>
+            <li><a href='https://freshplateweb.wordpress.com/' target='_blank'>Fresh Plate News</a></li>
+            <li><a href="pages/contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <section id="main" class="centerSection" >
+      <main>
+        <h1 class='tx-cntr casualHead'>Contact Us</h1>
+        <form method='post' class='centerSection' action="http://www.yourwebhosting.com/scripts/formemail.bml">
+            <input type="hidden" name="my_email" value="webmaster@servicefd.com"><!--Required for iPage.com server script -->
+            <fieldset>
+               <legend>Your Details</legend>
+                <label for='fname' class=''>First Name</label>
+                <input class='' type='text' id='fname' name='fname' placeholder='First Name' required>
+
+                <label class='' for='lname'>Last Name</label>
+                <input class='' type='text' id='lname' name='lname' placeholder='Last Name' >
+
+                <label class='' for='email'>eMail</label>
+                <input class='' type='email' id='email' name='email' placeholder='YourEmail@email.com' required>
+
+                <label class='' for='tel'>Phone</label>
+                <input class='' type='tel' id='tel' name='tel' placeholder='5555551212' >
+            </fieldset>
+            <fieldset>
+               <legend>Feedback</legend>
+                <label class='' for='comments'>Comments</label>
+                <textarea id='comments' rows='8' placeholder="Leave your comments here"></textarea>
+            </fieldset>
+            <div id="myButtons">
+               
+                <button class='btnMed btnFlat-rnd-crnr' type="submit" value="">Submit</button>
+                <button class='btnMed btnFlat-rnd-crnr' type="reset" value="Clear Form">Clear Form</button>
+			</div>
+            <input type="hidden" name="thankyou_url" value="http://freshplate.servicefocuseddesign.com/pages/thankOnSubmit.html">
+        </form>
+ <!--end main section -->
+    </main>
+    
+    </section>
+    <footer class="casualHead"><h6>&copy; 2017 | FreshPlate</h6></footer>
+    <script type="text/javascript" src="../scripts/freshplate.js"></script>
+</body>
+</html>

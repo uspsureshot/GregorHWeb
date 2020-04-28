@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto:700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Yesteryear');
+
+/* General TAG Formats */
+p {
+  padding: 8px 0;
+}
+hr {
+    margin: 25px 0;
+}
+h1 {
+  font-size: 4.2rem;
+  padding: 5px 0;
+}
+
+h2 {
+  font-size: 3.6rem;
+  padding: 5px 0;
+}
+
+h3 {
+  font-size: 3.0rem;
+  padding: 5px 0;
+}
+
+h4 {
+  font-size: 2.4rem;
+  padding: 5px 0;
+}
+
+h5 {
+  font-size: 1.8rem;
+  padding: 5px 0;
+}
+
+h6 {
+  font-size: 1.4rem;
+  padding: 5px 0;
+}
+ul {
+    list-style-type: none;
+}
+abbr {
+  font-size: inherit;
+  text-decoration: none;
+}
+
+address {
+  font-size: inherit;
+  font-style: normal;
+}
+
+blockquote {
+  font-style: italic;
+  font-weight: 700;
+  padding: 5px 5%;
+  border-left: 3px solid rgba(0, 0, 0, 0.4);
+}
+
+cite, i, var {
+  font-size: inherit;
+  font-style: italic;
+}
+
+code {
+  font-family: monospace;
+  font-size: inherit;
+  font-style: normal;
+}
+
+em {
+  font-size: inherit;
+  font-style: normal;
+  font-weight: 700;
+}
+
+img {
+	max-width:100%;
+	height: auto;
+}
+
+a {
+    color: $anchorStd;
+    text-decoration: none;
+}
+a:visited {
+    color: $anchorVis;
+}
+a:hover {
+    color: $anchorHov;
+}
+a:active {
+    color:$anchorActv;
+}
+
+
+
+
+

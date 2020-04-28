@@ -1,0 +1,132 @@
+nav {
+    margin-bottom: 2px;
+}
+figure {
+	padding: 15px;
+	border: solid 1px #333;
+	margin: 12px;
+}
+footer {
+    background-color: chocolate;
+    padding: 20px;
+}
+footer h6 {
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+
+#top {
+          /* background-color: #556B2F; */
+		background-image: url(../images/p.jpg);
+	background-size: cover;
+	background-position: center;
+          padding: 1%;
+}
+#header {
+          max-width: 1140px;
+          height: auto;
+          color: #fff;
+          padding-bottom: 20px;
+}
+
+#tagline {
+          padding:15px 1rem;
+          text-align: center;
+	text-shadow: 5px 5px 8px #000;
+
+}
+#main {
+    max-width: 1140px;
+    padding: 2%
+}
+.mainDocs {
+    color: #FF6347;
+	vertical-align: text-bottom;
+	padding-right: 8px;
+	font-size: 48px;
+}
+.btnHuge {
+    color: aqua;
+    font-size: 2rem;
+    margin: 0 25%;
+	text-shadow: 1px 1px 5px #333;
+}
+.btnHuge:hover {
+    color: #000;
+	text-shadow: none;
+}
+.cloud {
+    vertical-align: text-bottom;
+
+}
+.hover-cell td:hover {
+  background-color: #e4b363; }
+.instaMobile {
+	max-width: 369px;
+	margin: 10px auto 0;
+}
+.demo {
+	margin-top: 12px;
+}
+.doc-toc {
+  margin: 0 auto;
+}
+.doc-toc ul {
+  padding: 1em;
+  max-width: 350px;
+}
+.hm {
+    margin-left: 1.5rem;
+}
+.home {
+	color: #FF6347;
+	display: block;
+	text-align: center;
+	font-size: 48px;
+	padding: 8px;
+}
+.pageHead {
+	padding-bottom: 8px;
+}
+.pagesImg {
+    display: block;
+    max-height: 100px;
+    padding-top: 20px;
+    width: auto;
+
+}
+.striped-even tr:nth-child(even) {
+  background-color: #d9dbd0; }
+
+.striped-odd tr:nth-child(odd) {
+  background-color: #d9dbd0; }
+.thanks {
+	position: relative;
+	height: 422px;
+	max-width: 750px;
+	background-image: url(../images/perfect-retro-cabin-room.jpg);
+	margin: 0 auto;
+}
+.typog {
+	padding-top: 20px;
+}
+.wide {
+	width: 100%;
+}
+
+@media screen and (min-width: 768px){
+  .doc-toc h2 {
+    display: none;
+  }
+  .doc-toc {
+    top: 200px;
+    right: 10px;
+    position: fixed;
+    width: 200px;
+    text-align: right;
+    background-color: rgba(127, 191, 63, 0.9);
+  }
+}
+

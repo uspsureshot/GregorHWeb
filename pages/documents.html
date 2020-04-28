@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FreshPlate Documentation</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="../css/freshplate.css" type="text/css" rel="stylesheet" />
+
+    <link href="../css/mystyles.css" type="text/css" rel="stylesheet" />
+
+    <script
+     src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+
+  <link href="../images/faviconPlate.png" rel="icon" type="image/png">
+  </head>
+
+<body>
+
+   <header id="top">
+    <section id="header" class="centerSection">
+    <a href="../index.html"><img class="responsiveImg pagesImg" src="../images/FP-logo-white.png" alt="logo" /></a>
+
+    </section>
+    </header>
+      <nav >
+       <div class="responsive_nav_icon"></div>
+      <ul class="responsive_nav" >
+            <li><a href="../index.html" class="active_nav">HOME</a></li>
+            <li><a href="about.htm">ABOUT</a></li>
+            <li><a href="demos.html">DEMOS</a></li>
+            <li><a href="documents.html">DOCUMENTATION</a></li>
+            <li><a href="instagram.html">ADD INSTAGRAM</a></li>
+            <li><a href='https://freshplateweb.wordpress.com/' target='_blank'>Fresh Plate News</a></li>
+            <li><a href="pages/contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <section id="main" class="centerSection" >
+
+    <header>
+        <h1>Documentation for FreshPlate Framework</h1>
+    </header>
+	<hr>
+
+    <section class="doc-toc">
+      <h2><span class="material-icons mainDocs">toc</span>Table of Contents</h2>
+      <ul>
+        <li><a href="#reset">Reset</a></li>
+        <li><a href="#type">Typography</a></li>
+        <li><a href="#printer">Printing</a></li>
+        <li><a href="#forms">Forms</a></li>
+        <li><a href="#grid">Grid System</a></li>
+        <li><a href="#tables">Tables</a></li>
+        <li><a href="#buttons">Buttons</a></li>
+        <li><a href="#responsiveImg">Responsive Images</a></li>
+        <li><a href="#helperClasses">Helper Classes</a></li>
+        <li><a href="#navigation">Navigation</a></li>
+        <li><a href="#icons">Icons</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#parallax">Parallax Scrolling</a></li>
+      </ul>
+    </section>
+    <section>
+
+        <h2 id="reset"><span class="material-icons mainDocs">history</span>Reset</h2>
+        <p>The basic resets ensure that html elements work consistently across all browsers. </p>
+    </section>
+<hr>
+    <section>
+        <h2 id="type"><span class="material-icons mainDocs">format_size</span>Basic Typography Formatting</h2>
+
+        <h4 class="typog">Headings h1 through h6 and the four link states are pre-formatted</h4>
+        <table class="border">
+            <tr>
+                <td>H1</td>
+                <td>
+                    <h1>Heading 1</h1></td>
+            </tr>
+            <tr>
+                <td>H2</td>
+                <td>
+                    <h2>Heading 2</h2></td>
+            </tr>
+            <tr>
+                <td>H3</td>
+                <td>
+                    <h3>Heading 3</h3></td>
+            </tr>
+            <tr>
+                <td>H4</td>
+                <td>
+                    <h4>Heading 4</h4></td>
+            </tr>
+            <tr>
+                <td>H5</td>
+                <td>
+                    <h5>Heading 5</h5></td>
+            </tr>
+            <tr>
+                <td>H6</td>
+                <td>
+                    <h6>Heading 6</h6></td>
+            </tr>
+            <tr>
+                <td>Link</td>
+                <td><a href="#">Test Link Colors</a></td>
+            </tr>
+		</table>
+            <h4 class="typog">Headings Classes</h4>
+        <table class="border">
+            <tr>
+                <td>.casualHead</td>
+                <td>
+                    <p class="casualHead">Casual Heading</p>
+                    <p>Changes the font to Roboto.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>.fineHead</td>
+                <td>
+                    <p class="fineHead">Fine Heading</p>
+                    <p>Changes the font to Yesteryear.</p>
+                </td>
+            </tr>
+            </table>
+            <h4 class="typog">Formatting for All Text</h4>
+        <table class="border">
+            <tr>
+                <td>.bold</td>
+                <td>
+                    <p class="bold">bold text</p>
+                    <p>Makes the text bold.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>.capitalize</td>
+                <td>
+                    <p class="capitalize">capitalized text</p>
+                    <p>Forces the first letter of each word in the tag to be a capital.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>.uppercase</td>
+                <td>
+                    <p class="uppercase">uppercase text</p>
+                    <p>Forces all characters in the tag to be uppercase, regardless of what is typed.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>.lowercase</td>
+                <td>
+                    <p class="lowercase">lowercase text</p><p>Forces all characters in the tag to be lowercase, regardless of what is typed.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>.tx-cntr</td>
+                <td>
+                    <p class="tx-cntr">center aligned text</p>
+                    <p>Centers inline items.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>.tx-left</td>
+                <td>
+                    <p class="tx-left">left aligned text</p>
+                    <p>Aligns text to the left; not a float; inline items only.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>.tx-right</td>
+                <td>
+                    <p class="tx-right">right aligned text</p>
+                    <p>Aligns text to the right; not a float; inline items only.</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+<hr>
+    <section>
+        <h2 id="printer"><span class="material-icons mainDocs">invert_colors_off</span>No Print/Print Only</h2>
+        <table>
+            <tr>
+                <td>noPrint</td>
+                <td>Adding the 'noPrint class removes an Item from the Print feature.</td>
+            </tr>
+            <tr>
+                <td>.printOnly</td>
+                <td>Create a section with the .printOnly class if you have a footer that you want to show up when printing. You can put contact information or other items that will show on the end of the page being printed.</td>
+            </tr>
+        </table>
+    </section>
+<hr>
+    <section>
+        <h2 id="forms"><span class="material-icons mainDocs">assignment</span>Forms</h2> You can use the following classes to customize the look of your form input areas.
+        <table>
+            <tr>
+                <td>
+                    .field-border-none
+                </td>
+                <td>
+                    <field>
+                        <input class='field-border-none' type='text' id='fname' name='fname' placeholder='First Name'>
+                    </field>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    .field-rnd-crnr
+                </td>
+                <td>
+                    <input class='field-rnd-crnr' type='text' id='fname' name='fname' placeholder='First Name'>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    .field-theme-night
+                </td>
+                <td>
+                    <input class='field-theme-night' type='text' id='fname' name='fname' placeholder='First Name'>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    .field-theme-gray
+                </td>
+                <td>
+                    <input class='field-theme-gray' type='text' id='fname' name='fname' placeholder='First Name'>
+                </td>
+            </tr>
+        </table>
+        <h3>Sample Form</h3>
+        <p>For the sample form, we provide a code snippet as part of the demo folder in the framework download. </p>
+        <form method='post' class='centerSection' action="http://www.serviceFocusedDesign.com/scripts/formemail.bml">
+            <input type="hidden" name="my_email" value="webmaster@servicefd.com">
+            <!--Required for iPage.com server script -->
+            <fieldset>
+                <legend>Your Details</legend>
+                <label for='fname' class=''>First Name</label>
+                <input class='' type='text' id='fname' name='fname' placeholder='First Name'>
+
+                <label class='' for='lname'>Last Name</label>
+                <input class='' type='text' id='lname' name='lname' placeholder='Last Name'>
+
+                <label class='' for='email'>eMail</label>
+                <input class='' type='email' id='email' name='email' placeholder='YourEmail@email.com'>
+            </fieldset>
+            <fieldset>
+                <legend>Feedback</legend>
+                <label class='' for='comments'>Comments</label>
+                <textarea id='comments' rows='8' placeholder="Leave your comments here"></textarea>
+            </fieldset>
+            <div id="myButtons">
+                <button class='btnMed btnFlat-rnd-crnr' type="submit" value="Submit">Submit</button>
+                <button class='btnMed btnFlat-rnd-crnr' type="reset" value="Clear Form">Clear Form</button>
+            </div>
+            <input type="hidden" name="thankyou_url" value="http://freshplate.servicefocuseddesign.com/plugin/ThankYou.html">
+        </form>
+    </section>
+<hr>
+    <section>
+        <h2 id="grid"><span class="material-icons mainDocs">border_all</span>Grid System</h2>
+        <p>The grid system in the FreshPlate framework is based on 960px wide grid divided into 12 columns. All rows are wrapped in a 'div'. All columns are wrapped in a 'row' and add up to 12. The grid acts responsively with the following breakpoints:
+        </p>
+
+            <p><span class="bold">1. </span>Mobile portrait (Default) - Single column. No need to define. But for those users who want more granular control of mobile screen you can use classes to further split your container. </p>
+            <p><span class="bold">2. </span>Mobile landscape - @media screen and (min-device-width: 600px)</p>
+            <p><span class="bold">3. </span>Tablet- @media screen and (min-width: 768px)</p>
+            <p><span class="bold">4. </span>Large screen- @media screen and (min-width: 1200px)</p>
+
+        <div class="row">
+            <div class="casualHead col-lg-3 col-tb-12 col-ml-6">
+                <h3 class="typog">Grid system example</h3>
+            </div>
+            <div class="col-lg-3 col-tb-4 col-ml-6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam aspernatur labore similique commodi. Aliquid voluptatem sed explicabo nam hic, quisquam blanditiis, veritatis est. Ut aperiam cupiditate sequi, repellat, quasi provident!</p>
+            </div>
+            <div class="col-lg-3 col-tb-4 col-ml-6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam aspernatur labore similique commodi. Aliquid voluptatem sed explicabo nam hic, quisquam blanditiis, veritatis est. Ut aperiam cupiditate sequi, repellat, quasi provident!</p>
+            </div>
+            <div class="col-lg-3 col-tb-4 col-ml-6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam aspernatur labore similique commodi. Aliquid voluptatem sed explicabo nam hic, quisquam blanditiis, veritatis est. Ut aperiam cupiditate sequi, repellat, quasi provident!</p>
+            </div>
+        </div>
+        <p class="bold">(Try it : Try resizing your browser window to see how columns adjust responsively.)</p>
+    </section>
+<hr>
+    <section>
+        <h2 id="tables"><span class="material-icons mainDocs">view_module</span>Tables</h2>
+        <table>
+            <tr>
+                <td>.border</td>
+                <td>
+                    <table class="border">
+                        <tr>
+                            <td>One</td>
+                            <td>Two</td>
+                        </tr>
+                        <tr>
+                            <td>Three</td>
+                            <td>Four</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>.striped-even</td>
+                <td>
+                    <table class="striped-even">
+                        <tr>
+                            <td>One</td>
+                            <td>Two</td>
+                        </tr>
+                        <tr>
+                            <td>Three</td>
+                            <td>Four</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>.striped-odd</td>
+                <td>
+                    <table class="striped-odd">
+                        <tr>
+                            <td>One</td>
+                            <td>Two</td>
+                        </tr>
+                        <tr>
+                            <td>Three</td>
+                            <td>Four</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>.hover-row</td>
+                <td>
+                    <table class="hover-row">
+                        <tr>
+                            <td>One</td>
+                            <td>Two</td>
+                        </tr>
+                        <tr>
+                            <td>Three</td>
+                            <td>Four</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>.hover-cell</td>
+                <td>
+                    <table class="hover-cell">
+                        <tr>
+                            <td>One</td>
+                            <td>Two</td>
+                        </tr>
+                        <tr>
+                            <td>Three</td>
+                            <td>Four</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <h3>Sample Table</h3>
+        <table   class='striped-odd centerSection'>
+	<thead>
+		<th class='tcol01'>Title One</th>
+		<th class='tcol02'>Title Two</th>
+		<th class='tcol03'>Title Three</th>
+		<th class='tcol04'>Title Four</th>
+		<th class='tcol05'>Title Five</th>
+		<th class='tcol06'>Title Six</th>
+	</thead>
+	<tbody>
+	
+<tr id='row01'> 
+	<td class='tcol01' data-label='Title One'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+	<td class='tcol02' data-label='Title Two'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>	<td class='tcol03' data-label='Title Three'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>	<td class='tcol04'  data-label='Title Four'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>	<td class='tcol05'  data-label='Title Five'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>	<td class='tcol06'  data-label='Title Six'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>
+</tr>
+<tr id='row02'>
+	<td class='tcol01' data-label='Title One'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+	<td class='tcol02' data-label='Title Two'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>	<td class='tcol03' data-label='Title Three'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>	<td class='tcol04'  data-label='Title Four'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>	<td class='tcol05'  data-label='Title Five'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>	<td class='tcol06'  data-label='Title Six'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>
+</tr>
+<tr id='row03'>
+	<td class='tcol01' data-label='Title One'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+	<td class='tcol02' data-label='Title Two'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>	<td class='tcol03' data-label='Title Three'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>	<td class='tcol04'  data-label='Title Four'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>	<td class='tcol05'  data-label='Title Five'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>	<td class='tcol06'  data-label='Title Six'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>
+</tr>	
+	</tbody>
+	</table>
+        <p class="bold">(Try it : Try resizing your browser window to see how tables adjust responsively.)</p>
+        <p>Tables are very old school.  But that is sometimes the very best way to show certain kinds of data.  In order to be ADA compliant, you cannot hide your table heading fields.  Doing that messes with eRaders for the visually impaired.</p>
+
+		<p>On a small device, having more than 2 or three columns becomes a problem.  A two column layout, where the column titles repeat on each item is a better option.  The sample table has 6 columns.  But when you get down to mobile, having those columns crowded in to the screen means it’s impossible to read.</p> 
+
+		<p>Enter <q>data-label</q>: By moving the th fields off the page by absolute positioning.  This allows eReades to see the table headers.  We then pull the data-label attribute and place it in front of each Table Data field. This creates a faux 2 column layout.</p>
+
+		<p>Go ahead and shrink down the above table and watch what happens.  On any device smaller than a tablet, there is a faux 2 column layout, after that it is then back to normal views.</p>
+   		<p>Code Example:  &lt;td data-label=<q>Column One</q>&gt;Text in the first table data cell.&lt;/td&gt;</p>
+    </section>
+<hr>
+    <section>
+        <h2 id="buttons"><span class="material-icons mainDocs">radio_button_checked</span>Buttons</h2>
+        <table>
+            <tr>
+                <td>
+                    .btnStd
+                </td>
+                <td>
+                    <button>button</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    .btnFlat
+                </td>
+                <td>
+                    <button class="btnFlat">button</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    .btnFlat-rnd-crnr
+                </td>
+                <td>
+                    <button class="btnFlat-rnd-crnr">button</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    .btn3d
+                </td>
+                <td>
+                    <button class="btn3d">button</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    .btn3d-rnd
+                </td>
+                <td>
+                    <button class="btn3d-rnd">button</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    .btn3d-rnd-crnr
+                </td>
+                <td>
+                    <button class="btn3d-rnd-crnr">button</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    .btnTinySq
+                </td>
+                <td>
+                    <button class="btnTinySq">button</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    .btnMed
+                </td>
+                <td>
+                    <button class="btnMed">button</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    .btnLrg
+                </td>
+                <td>
+                    <button class="btnLrg">button</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    .btnHuge
+                </td>
+                <td class="wide">
+                    <button class="btnHuge">button - width 50% of container</button>
+                </td>
+            </tr>
+        </table>
+    </section>
+<hr>
+    <section>
+        <h2 id="responsiveImg"><span class="material-icons mainDocs">photo_size_select_large</span>Responsive Images</h2>
+        <table>
+            <tr>
+                <td>.responsiveImg</td>
+                <td class="wide"><img src="http://placekitten.com/g/1200/300" alt="kitten placeholder image" class="responsiveImg"><hr>Allows images to behave responsively; adding this class to an img tag ensures a responsive image.</td>
+            </tr>
+        </table>
+       <p class="bold">(Try it : Try resizing your browser window to see how images adjust responsively.)</p>
+    </section>
+<hr>
+    <section>
+        <h2 id="helperClasses"><span class="material-icons mainDocs">lightbulb_outline</span>Helper Classes</h2>
+        <p>Fresh Plate includes a number of helper classes beyond the usual quick floats and clear fix. To create bold text, for example, add the class ‘bold’, and to create italicized text, add the class ‘italic’.</p>
+
+        <table>
+            <tr>
+                <td>.onLeft</td>
+                <td>Floats item to the left</td>
+            </tr>
+            <tr>
+                <td>.onRight</td>
+                <td>Floats item to the right</td>
+            </tr>
+            <tr>
+                <td>.clearfix</td>
+                <td>Clears floated items to avoid spacing issues. Often used in an empty div to stop floats.
+</td>
+            </tr>
+            <tr>
+                <td>.btn_top</td>
+                <td>Creates a floating button that will take the users to the top of the webpage without having to scroll. (Look to your right on this page)
+                    <button class="btn_top" title="Go to top">Top</button>
+                </td>
+            </tr>
+            <tr>
+                <td>.reverseTransparent</td>
+                <td>
+                <img src="../images/Capture5.JPG" alt="hedgehog" class="responsiveImg" /><hr>Add to a div to create a special presentation. The ‘reverseTransparent’ class is a shortcut to beautiful headings displayed in front of a masked background. The font family classes can work in conjunction with the ‘reverseTransparent’ class. However, ‘reverseTransparent’ can stand alone. The image behind the text must be applied as a background image to a surrounding div, like a section with its own id.        </td>
+            </tr>
+          <tr>
+                <td>.hng-p</td>
+                <td>Applying this class to a paragraph creates a hanging paragraph with the first line being bold and italic.  This only effects the first line; if a sentence is longer than one line, only the first line words will be different.
+</td>
+            </tr>
+            <tr>
+                <td>.hng-lst </td>
+                <td>Applying this class to an ol or ul formats the list item li to have a first line out-dent, creating a hanging item.  Only the first line is affected.
+</td>
+            </tr>
+            <tr>
+                <td>.centerSection </td>
+                <td>Useful for centering block type items in any container.  Cannot be used in conjunction with the grid classes.</td>
+            </tr>
+            <tr>
+                <td>.notMobile</td>
+                <td>Adding this class sets the display to 'none' for widths less than 768 pixels.  This would be useful if you don't want a picture or other item displayed in mobile formats.
+</td>
+            </tr>
+            <tr>
+                <td>.parallax</td>
+                <td>Please see the section "Parallax Scrolling" below.</td>
+            </tr>
+            <tr>
+                <td>.scroll</td>
+                <td>Enables smooth scrolling to the desired element on that page.</td>
+            </tr>
+        </table>
+
+
+
+
+    </section>
+<hr>
+    <section>
+        <h2 id="navigation"><span class="material-icons mainDocs">storage</span>Navigation</h2>
+        <p>The following snippet of code is a basic navbar you can follow to add responsive navigation to any page. For smaller screens, a hamburger menu icon will appear on the top left that you can toggle to open/show the menu links.</p>
+        <h5>HTML:</h5>
+        <code>
+                &lt;nav&gt;
+                <br/> &lt;div class=&quot;responsive_nav_icon&quot;&gt;&lt;/div&gt;
+<br/> &lt;ul class=&quot;responsive_nav&quot;&gt;
+<br/> &lt;li&gt;&lt;a href=&quot;#&quot;&gt;HOME&lt;/a&gt;&lt;/li&gt;
+<br/> &lt;li&gt;&lt;a href=&quot;#&quot;&gt;ABOUT&lt;/a&gt;&lt;/li&gt;
+<br/> &lt;li&gt;&lt;a href=&quot;#&quot;&gt;GALLERY&lt;/a&gt;&lt;/li&gt;
+<br/> &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;active_nav&quot;&gt;CONTACT&lt;/a&gt;&lt;/li&gt;
+<br/> &lt;/ul&gt;
+<br/> &lt;/nav&gt;
+        </code>
+
+        <p>To create an active page simply add the class ‘active_nav’ to that page link to show the current active page.</p>
+
+        <code>
+            &lt;li &gt;&lt;a href=&quot;#&quot; class='active_nav'&gt;HOME&lt;/a&gt;&lt;/li&gt;
+        </code>
+
+        <h3>Example navigation</h3>
+        <nav>
+            <div class="responsive_nav_icon"></div>
+            <ul class="responsive_nav">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#" class="active_nav">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <h3>Fixed to top</h3>
+        <p>To fix your menu at the top in larger layouts, just add the class top_fixed_nav to your unordered menu list like below.</p>
+        <h5>HTML:</h5>
+        <code>
+            &lt;nav&gt;<br/>       &lt;div class=&quot;responsive_nav_icon&quot;&gt;&lt;/div&gt;<br/>        &lt;ul class=&quot;responsive_nav top_fixed_nav&quot;&gt;<br/>            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;HOME&lt;/a&gt;&lt;/li&gt;<br/>            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;ABOUT&lt;/a&gt;&lt;/li&gt;<br/>            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;GALLERY&lt;/a&gt;&lt;/li&gt;<br/>            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;CONTACT&lt;/a&gt;&lt;/li&gt;<br/>        &lt;/ul&gt;<br/>    &lt;/nav&gt;
+        </code>
+
+        <p>Remember to add a margin-top to the main content following the header since it will be overlaid on top of existing content. To account for the height of the header nav, use the CSS below
+        </p>
+
+        <code>
+            main { margin-top:4em; }
+        </code>
+
+        <h3>Fixed to bottom</h3>
+        <p>To fix the header to the bottom use bottom_fixed_nav:</p>
+        <h5>HTML:</h5>
+        <code>
+            &lt;nav&gt;
+        <br/> &lt;div class=&quot;responsive_nav_icon&quot;&gt;&lt;/div&gt;
+        <br/> &lt;ul class=&quot;responsive_nav bottom_fixed_nav&quot;&gt;
+        <br/> &lt;li&gt;&lt;a href=&quot;#&quot;&gt;HOME&lt;/a&gt;&lt;/li&gt;
+        <br/> &lt;li&gt;&lt;a href=&quot;#&quot;&gt;ABOUT&lt;/a&gt;&lt;/li&gt;
+        <br/> &lt;li&gt;&lt;a href=&quot;#&quot;&gt;GALLERY&lt;/a&gt;&lt;/li&gt;
+        <br/> &lt;li&gt;&lt;a href=&quot;#&quot;&gt;CONTACT&lt;/a&gt;&lt;/li&gt;
+        <br/> &lt;/ul&gt;
+        <br/> &lt;/nav&gt;
+        </code>
+
+        <p>Note: Make sure to give proper margin-bottom to your main content as it will be overlaid by the header at the bottom.</p>
+
+        <h3>Collapsible Sidebar Navigation</h3>
+        <p>The Freshplate framework also provides classes to have collapsible sidebars. To have your navigation slide in and out from the side use classes “side_nav” and “side_nav_close” as shown in below example. Click <a href="http://freshplate.servicefocuseddesign.com/root/SweetwaterBrewCo/index.html">here</a> for a working demonstration.</p>
+
+        <h5>HTML:</h5>
+        <code>
+            &lt;nav class=&quot;side_nav &quot; style=&quot;left: -500px;&quot;&gt;<br/>            &lt;div class=&quot;side_nav_close&quot;&gt;&lt;/div&gt;<br/>            &lt;ul&gt;<br/>                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;HOME&lt;/a&gt;&lt;/li&gt;<br/>                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;ABOUT&lt;/a&gt;&lt;/li&gt;<br/>                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;GALLERY&lt;/a&gt;&lt;/li&gt;<br/>                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;CONTACT&lt;/a&gt;&lt;/li&gt;<br/>            &lt;/ul&gt;<br/>        &lt;/nav&gt;<br/>        &lt;main class=&quot;push_right&quot;&gt;<br/>            &lt;button class=&quot;side_nav_btn&quot;&gt;Menu&lt;/button&gt;<br/>            &lt;div&gt;Main text on page&lt;/div&gt;<br/>        &lt;/main&gt;
+        </code>
+
+        <p>The class ‘side_nav_btn’ can be added to any element that you want to click to open the menu. In this example, it's a button.</p>
+        <p>To close the panel , click on the ‘X’ button on the panel and it will slide back to the left.</p>
+        <p>By default the sidebar will overlay on top of your main content. You also have the option of pushing your content to the left adding the class ‘push_right’ to the main container that you want to be pushed.</p>
+
+        <h5>HTML:</h5>
+        <code>
+            &lt;main class=&quot;push_right&quot;&gt;<br/>            &lt;button class=&quot;side_nav_btn&quot;&gt;Menu&lt;/button&gt;<br/>           &lt;any content that needs to pushed right&gt;<br/>	&lt;...&gt;<br/>&lt;/main&gt;
+        </code>
+
+        <h3>Dropdown</h3>
+        <p>Freshplate also provides an easy mechanism to add submenus to your main navigation using class “submenu”. The submenu class along with the responsive_nav style will provide the default hover dropdown feature on large screens. For responsive small screens, the submenus are included under their corresponding top navlinks like below.</p>
+        <p>You can overwrite the colors and styles with your own styles. But remember to use dropdowns wisely as they are not the most user-friendly widgets.</p>
+        <h5>HTML:</h5>
+        <code>&lt;nav&gt;<br/>&lt;div class=&quot;responsive_nav_icon&quot;&gt;&lt;/div&gt;<br/>        &lt;ul class=&quot;responsive_nav&quot; &gt;<br/>&lt;li&gt;&lt;a href=&quot;#&quot;&gt;HOME&lt;/a&gt;&lt;/li&gt;<br/>&lt;li&gt;&lt;a href=&quot;#&quot;&gt;ABOUT&lt;/a&gt;&lt;/li&gt;<br/>&lt;li class=&quot;submenu&quot;&gt;&lt;a href=&quot;#&quot;&gt;GALLERY&lt;/a&gt;<br/>&lt;ul&gt;<br/>&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Landscape&lt;/a&gt;&lt;/li&gt;<br/>&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Buildings&lt;/a&gt;&lt;/li&gt;<br/>&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Animals&lt;/a&gt;&lt;/li&gt;<br/>&lt;/ul&gt;<br/>&lt;/li&gt;<br/>&lt;li &gt;&lt;a href=&quot;#&quot;&gt;CONTACT&lt;/a&gt;&lt;/li&gt;<br/>&lt;/ul&gt;<br/>&lt;/nav&gt;</code>
+
+    </section>
+<hr>
+    <section>
+        <h2 id="icons"><span class="material-icons mainDocs">account_circle</span>Icons</h2>
+        <p>Freshplate provides an icon set imported from <a href="https://material.io/icons/">Material Design Icons</a>. To use, simply add the 'material-icons' class to an element of your choice and specify what kind of icon you want to use within the tag.</p>
+        <button type="button" class="btnFlat material-icons">alarm</button>
+        <h5>HTML:</h5>
+        <code>
+            &lt;button type=&quot;button&quot; class=&quot;btnFlat material-icons&quot;&gt;alarm&lt;/button&gt;
+        </code>
+    </section>
+<hr>
+    <section>
+        <h2 id="gallery"><span class="material-icons mainDocs">view_carousel</span>Gallery</h2>
+        <h4>Automatic Slideshow</h4>
+        <p>The Carousel is an automatic slideshow which is set to auto-rotate images in a frame with a 2 second pause. The images in carousel need to be optimized to 300x300 px squares. To call the carousel, just create a div with a class of “auto_slideshow”. Add the optmized images in an un-ordered list.</p>
+
+        <h5>HTML:</h5>
+
+        <code>
+                &lt;div class=&quot;auto_slideshow&quot;&gt;<br/>&lt;ul&gt;<br/>                &lt;li&gt;&lt;img src=&quot;../images/cupcake01.jpg&quot; alt=&quot;cupcake&quot;&gt;&lt;/li&gt;<br/>                &lt;li&gt;&lt;img src=&quot;../images/cupcake02.jpg&quot; alt=&quot;cupcake&quot;&gt;&lt;/li&gt;<br/>                &lt;li&gt;&lt;img src=&quot;../images/cupcake03.jpg&quot; alt=&quot;cupcake&quot;&gt;&lt;/li&gt;<br/>                &lt;li&gt;&lt;img src=&quot;../images/cupcake04.jpg&quot; alt=&quot;cupcake&quot;&gt;&lt;/li&gt;<br/>                &lt;li&gt;&lt;img src=&quot;../images/cupcake05.jpg&quot; alt=&quot;cupcake&quot;&gt;&lt;/li&gt;<br/>                &lt;li&gt;&lt;img src=&quot;../images/cupcake06.jpg&quot; alt=&quot;cupcake&quot;&gt;&lt;/li&gt;<br/>            &lt;/ul&gt;<br/>        &lt;/div&gt;
+
+        </code>
+        <p>The images rotate every 2 seconds and pause for 3 seconds each. The slideshow responds to mouseover events by pausing on hover and continues on unhover.</p>
+
+        <h4>Gallery with Thumbnail</h4>
+        <p>The FreshPlate framework provides another unique slider format to showcase your images. In this you can show your gallery as a list of thumbnail images in a film-strip-like format and the large images can be seen in the viewer one at a time. You can either use the previous/next icons to scroll through the thumbnail list or directly click on a specific thumbnail to see its larger version. The thumbnail gallery is fully responsive.</p>
+        <p>Preferred Image Sizes:</p>
+        <p>Large Size: 300 x 300px</p>
+        <p>Thumbnails: 50 x 50px</p>
+
+        <h5>HTML</h5>
+        <code>
+
+        &lt;div class=&quot;gallery_container&quot;&gt;<br/>&lt;div class=&quot;gallery&quot;&gt;<br/>         &lt;div class=&quot;slider&quot;&gt;<br/>&lt;ul&gt;<br/>//Add your own large size images<br/>           &lt;li&gt;&lt;img src=&quot;../images/cupcake01.jpg&quot; alt=&quot;cupcake&quot;&gt;&lt;/li&gt;<br/>   &lt;li&gt;&lt;img src=&quot;../images/cupcake02.jpg&quot; alt=&quot;cupcake&quot;&gt;&lt;/li&gt;<br/>   &lt;li&gt;&lt;img src=&quot;../images/cupcake03.jpg&quot; alt=&quot;cupcake&quot;&gt;&lt;/li&gt;<br/>   &lt;/ul&gt;<br/>&lt;/div&gt;
+                //   End slider→<br/>
+//  Slider controls for prev/next icons
+                &lt;div class=&quot;sliderCtrls&quot;&gt;<br/>&lt;button class=&quot;btn_prev&quot; data-dir=&quot;prev&quot;&gt;&lt;/button&gt;<br/>&lt;button class=&quot;btn_next&quot; data-dir=&quot;next&quot;&gt;&lt;/button&gt;<br/>                &lt;/div&gt;
+                //   End slider control buttons<br/>
+            &lt;/div&gt;
+			//  End Gallery<br/>
+
+            // Thumbnail scroll list set up<br/>
+            &lt;div class=&quot;thumb_container&quot;&gt;<br/>&lt;div class=&quot;thumb_gallery&quot;&gt;<br/> &lt;ul&gt;
+			// Add your own thumbnail images<br/>
+                        &lt;li&gt;<br/>&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;../images/cupcake01s.jpg&quot; alt=&quot;cupcake&quot; height=&quot;50px&quot; width=&quot;50px&quot;&gt;&lt;/a&gt;<br/>                        &lt;/li&gt;<br/>&lt;li&gt;<br/>&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;../images/cupcake02s.jpg&quot; alt=&quot;cupcake&quot; height=&quot;50px&quot; width=&quot;50px&quot;&gt;&lt;/a&gt;<br/>                        &lt;/li&gt;<br/>&lt;li&gt;<br/>&lt;a href=&quot;&quot;&gt;&lt;img src=&quot;../images/cupcake03s.jpg&quot; alt=&quot;cupcake&quot; height=&quot;50px&quot; width=&quot;50px&quot;&gt;&lt;/a&gt;<br/>                        &lt;/li&gt;<br/>&lt;/ul&gt;<br/>&lt;/div&gt;<br/>&lt;/div&gt;<br/><br/>        &lt;/div&gt;
+        //  End Gallery container<br/>
+        </code>
+
+
+
+        <h4>Popup Modal gallery</h4>
+        <p>Freshplate also allows users to showcase a gallery list with a modal pop-up lightbox mechanism without needing to download an external plug-in. You can achieve this by using simple classes.</p>
+        <p>All you need to do is arrange your images in a container with class ‘popUpContainer’ and add the class ‘popUpImg’ to a div holding the image. Then clicking on the image will produce the blow up of the image in a full size container. Add the description of that image in the ‘alt’ field of the <img> tag and it will get appended as the title caption. In addition, the lightbox is fully responsive so your container should adjust automatically on mobile devices to get the maximum resolution possible.</p>
+
+        <h5>HTML</h5>
+        <code>
+            &lt;div class=&quot;popUpContainer&quot;&gt;<br/>&lt;h4&gt;Landcapes&lt;/h4&gt;<br/>            &lt;div class=&quot;popUpImg&quot;&gt;<br/>&lt;img  alt=&quot;Landscape Picture 01&quot; src=&quot;images/landscape01.jpg&quot; /&gt; <br/>&lt;/div&gt;<br/>&lt;div class=&quot;popUpImg&quot;&gt;<br/>&lt;img  alt=&quot;Landscape Picture 02&quot; src=&quot;images/landscape02.jpg&quot; /&gt; <br/>&lt;/div&gt;<br/>&lt;div class=&quot;popUpImg&quot;&gt;<br/>&lt;img  alt=&quot;Landscape Picture 03&quot; src=&quot;images/landscape03.jpg&quot; /&gt; <br/>&lt;/div&gt;<br/>&lt;div class=&quot;popUpImg&quot;&gt;<br/>&lt;img  alt=&quot;Landscape Picture 04&quot; src=&quot;images/landscape04.jpg&quot; /&gt; <br/>&lt;/div&gt;<br/>&lt;/div&gt;
+		</code>
+
+    </section>
+<hr>
+    <section>
+        <h2 id="parallax"><span class="material-icons mainDocs">move_to_inbox</span>Parallax Scrolling</h2>
+        <p>To have a background-image have a parallax effect for a section, simply add the class=”parallax” to that component like below. Then add the background-image for that section in your own style.</p>
+        <table>
+            <tr>
+                <td>HTML</td>
+                <td>
+                    <code>
+                        &lt;main class=&quot;parallax&quot;&gt;<br/>&lt;img src=&#x2019;Forground image here&#x2019; alt=&#x2019;This is where the forgeound image goes&gt;</code><br/><br/>Or<br/><br/><code>&lt;div&gt;With Text here.&lt;/div&gt;<br/>&lt;/main&gt;<br/><br/>
+                    </code>
+                </td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td><code>.parallax { background-image: url('../images/YourImageHere01.jpeg'); }</code></td>
+            </tr>
+        </table>
+       <p class="bold"> *Note: You may use different images on separate containers. The div/section that has the class of "parallax" must only contain the one class, "parallax".  By adding a surrounding container unique to the individual space you can have various background images.</p>
+
+<p>Example:</p>
+<p><code>#hero .parallax { background-image: url('../images/YourImageHere01.jpeg'); }</code></p>
+<p><code>#page2 .parallax { background-image: url('../images/YourImageHere02.jpeg'); }</code></p>
+
+    </section>
+<hr>
+   <section>
+        <h2><span class="material-icons mainDocs">tab</span>Tabs</h2>
+        <p>To create tabs there are a couple of things needed. A main container (class 'hTabs') that contains the <em>tab menu section</em> with the bunch of buttons and a section with corresponding <em>tab content</em>. Check the demo below</p>
+       <button class="btn_codeSnippet btnFlat-rnd-crnr btnMed">Click here for Code</button>
+        <div class="codeSnippet">
+            <code>
+            &lt;div class=&quot;hTabs&quot;&gt;<br/>                &lt;div class=&quot;tab_menu&quot;&gt;<br/>                    &lt;button id=&quot;tab1&quot;&gt;Tab1&lt;/button&gt;<br/>                    &lt;button id=&quot;tab2&quot; &gt;Tab2&lt;/button&gt;<br/>                    &lt;button id=&quot;tab3&quot; &gt;Tab3&lt;/button&gt;<br/>                &lt;/div&gt;<br/><br/>                &lt;div id=&quot;tab_content1&quot;&gt;<br/>                    &lt;p &gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, sit voluptatibus voluptas rerum error ea fugiat similique eos itaque enim hic reiciendis eveniet sapiente velit excepturi nobis harum modi veritatis?&lt;/p&gt;<br/>                &lt;/div&gt;<br/><br/>                &lt;div id=&quot;tab_content2&quot;&gt;<br/>                    &lt;p &gt; Eveniet odit, molestiae ab. Laborum culpa dolores, voluptatibus eligendi quasi consectetur aut fugit, rem labore dolore deleniti nemo minima, harum, soluta non!&lt;/p&gt;<br/>                &lt;/div&gt;    <br/><br/><br/>                &lt;div id=&quot;tab_content3&quot;&gt;<br/>                    &lt;p &gt; Quasi sunt magnam cupiditate praesentium hic fugiat dicta sint accusamus, error sed voluptatum nulla consequuntur veniam ullam harum. Excepturi aliquid deleniti tempore.&lt;/p&gt;<br/>                &lt;/div&gt;<br/>            &lt;/div&gt;
+            </code>
+        </div>
+        <div class="hTabs">
+            <div class="tab_menu">
+                <button id="tab1">Tab1</button>
+                <button id="tab2" >Tab2</button>
+                <button id="tab3" >Tab3</button>
+            </div>
+
+            <div id="tab_content1">
+                <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, sit voluptatibus voluptas rerum error ea fugiat similique eos itaque enim hic reiciendis eveniet sapiente velit excepturi nobis harum modi veritatis?</p>
+            </div>
+
+            <div id="tab_content2">
+                <p > Eveniet odit, molestiae ab. Laborum culpa dolores, voluptatibus eligendi quasi consectetur aut fugit, rem labore dolore deleniti nemo minima, harum, soluta non!</p>
+            </div>    
+
+
+            <div id="tab_content3">
+                <p > Quasi sunt magnam cupiditate praesentium hic fugiat dicta sint accusamus, error sed voluptatum nulla consequuntur veniam ullam harum. Excepturi aliquid deleniti tempore.</p>
+            </div>
+        </div>
+        </section>
+        
+<hr>
+     <section>
+        <h2><span class="material-icons mainDocs">arrow_drop_down_circle</span>Accordion</h2>
+        <p>To create accordions you will need to enclode the accordion in a container with class 'accordion'. The accordion  container basically has two section for each panel. An <em>accordion-header</em> and its corresponding <em>accordion-panel</em>. Thats it. You can keep adding mroe panel pairs like that. Check the code snippet for the necessary classes.</p>
+       <button class="btn_codeSnippet btnFlat-rnd-crnr btnMed">Click here for Code</button>
+        <div class="codeSnippet">
+            <code>
+            &lt;div class=&quot;accordion&quot;&gt;<br/>            &lt;h4 class=&quot;accordion-header&quot;&gt;Panel 1&lt;/h4&gt;<br/>            &lt;div class=&quot;accordion-panel&quot;&gt;<br/>                &lt;p &gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, sit voluptatibus voluptas rerum error ea fugiat similique eos itaque enim hic reiciendis eveniet sapiente velit excepturi nobis harum modi veritatis?&lt;/p&gt;<br/>            &lt;/div&gt;<br/>            &lt;h4 class=&quot;accordion-header&quot;&gt;Panel 2&lt;/h4&gt;<br/>            &lt;div class=&quot;accordion-panel&quot;&gt;<br/>                &lt;p &gt; Eveniet odit, molestiae ab. Laborum culpa dolores, voluptatibus eligendi quasi consectetur aut fugit, rem labore dolore deleniti nemo minima, harum, soluta non!&lt;/p&gt;<br/>            &lt;/div&gt;<br/>            &lt;h4 class=&quot;accordion-header&quot;&gt;Panel 3&lt;/h4&gt;<br/>            &lt;div class=&quot;accordion-panel&quot;&gt;<br/>                 &lt;p &gt; Quasi sunt magnam cupiditate praesentium hic fugiat dicta sint accusamus, error sed voluptatum nulla consequuntur veniam ullam harum. Excepturi aliquid deleniti tempore.&lt;/p&gt;<br/>            &lt;/div&gt; <br/>        &lt;/div&gt;
+            </code>
+        </div>
+        <div class="accordion">
+            <h4 class="accordion-header">Panel 1</h4>
+            <div class="accordion-panel">
+                <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, sit voluptatibus voluptas rerum error ea fugiat similique eos itaque enim hic reiciendis eveniet sapiente velit excepturi nobis harum modi veritatis?</p>
+            </div>
+            <h4 class="accordion-header">Panel 2</h4>
+            <div class="accordion-panel">
+                <p > Eveniet odit, molestiae ab. Laborum culpa dolores, voluptatibus eligendi quasi consectetur aut fugit, rem labore dolore deleniti nemo minima, harum, soluta non!</p>
+            </div>
+            <h4 class="accordion-header">Panel 3</h4>
+            <div class="accordion-panel">
+                 <p > Quasi sunt magnam cupiditate praesentium hic fugiat dicta sint accusamus, error sed voluptatum nulla consequuntur veniam ullam harum. Excepturi aliquid deleniti tempore.</p>
+            </div> 
+        </div>
+        </section>
+        
+    </section>
+    <footer class="casualHead"><h6>&copy; 2017 | FreshPlate</h6></footer>
+    <script type="text/javascript" src="../scripts/freshplate.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            //script for toggling code snippets in the documentation
+            $('.codeSnippet').hide();
+            //When the button is clicked the corresponding code open/close
+            $('.btn_codeSnippet').click(function(){
+                $(this).next('.codeSnippet').slideToggle();
+            });//end code snippet click function
+            
+        });
+    </script>
+</body>
+</html>

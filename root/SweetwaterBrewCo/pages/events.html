@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sweetwater Brewing Co</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="../../css/freshplate.css" type="text/css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript" src="../scripts/freshplate.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="side_nav" style="left: -500px;">
+            <div class="side_nav_close"></div>
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="events.html">EVENTS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <a class="menu side_nav_btn"><i class="material-icons">&#xE5D2;</i></a>
+        <h1 class="fineHead parallax-header">Special Events</h1>
+        <div class="parallax4">
+            <div class="row boxClearLg events-form">
+                <p>We would love to host your next get together! For events big and small, we offer private and semi-private dining options, as well as indoor and patio seating. With a professional, attentive staff effortlessly watching over every detail, your only concern will be enjoying the beer, food and company.</p>
+
+                <h3 class='tx-cntr'>Group Form Request</h3>
+                <form method='post' class='' action="http://freshplate.servicefocuseddesign.com/root/SweetwaterBrewCo/pages/ThankYou.html">
+                    <input type="hidden" name="my_email" value="webmaster@servicefd.com">
+                    <!--Required for iPage.com server script -->
+                    <fieldset>
+                        <legend>Contact Info</legend>
+                        <label for='fname' class=''>Full Name</label>
+                        <input class='field-border-none' type='text' id='fname' name='fname' placeholder='Full Name'>
+
+                        <label class='' for='org'>Organization</label>
+                        <input class='field-border-none' type='text' id='org' name='org' placeholder='Organization, if applicable'>
+
+                        <label class='' for='phone'>Phone Number</label>
+                        <input class='field-border-none' type='tel' id='phone' name='phone' placeholder='619-888-8888'>
+
+                        <label class='' for='email'>Email</label>
+                        <input class='field-border-none' type='email' id='email' name='email' placeholder='YourEmail@email.com'>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Event Details</legend>
+                        <label class='' for='date'>Date of Event</label>
+                        <input class='field-border-none' type='text' id='date' name='date' placeholder="01/01/2017">
+
+                        <label class='' for='time'>Time</label>
+                        <input class='field-border-none' type='text' id='time' name='time' placeholder='2:00pm'>
+
+                        <label class='' for='type'>Type of Event</label>
+                        <input class='field-border-none' type='text' id='type' name='type' placeholder='Wedding, birthday, anniversary, etc...'>
+
+                        <label class='' for='attendees'>Estimated Attendees</label>
+                        <input class='field-border-none' type='text' id='attendees' name='attendees' placeholder='Number of people attending'>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Other</legend>
+                        <label class='' for='comments'>Additional Information:</label>
+                        <textarea class="field-border-none" id='comments' rows='5' placeholder="Do any guests have allergies? Do youLeave your comments here."></textarea>
+                    </fieldset>
+                    <div id="myButtons">
+                        <button class='btnLrg btnFlat-rnd-crnr' type="submit" value="Submit">Submit</button>
+                        <button class='btnLrg btnFlat-rnd-crnr' type="reset" value="Clear Form">Clear Form</button>
+                    </div>
+                    <input type="hidden" name="thankyou_url" value="http://freshplate.servicefocuseddesign.com/plugin/ThankYou.html">
+                    <!-- 	Not this will need to be moved to the correct directory. -->
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h5 class="fineHead">Sherry Guo &copy; 2017</h5>
+        <h6>This site was made using the <a href="http://freshplate.servicefocuseddesign.com">Freshplate</a> framework.</h6>
+    </footer>
+</body>
+
+</html>

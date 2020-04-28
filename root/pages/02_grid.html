@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> GRID system </title>
+    <link rel="stylesheet" href="../css/freshplate.css" type="text/css">
+    <style>
+        body{
+            background-color: #ccc;
+        }
+       header h1{
+            text-align: center;
+            margin: 1em auto 2em;
+
+        }
+        [class*="col-"]{
+            padding: 15px;
+        }
+        .row{
+            background-color:LightSlateGrey;
+
+        }
+
+       @media screen and (min-width: 600px)
+        and (orientation : landscape){
+           body{
+            background-color: lightblue;
+        }
+        }
+
+        @media screen and (min-width:768px){
+           body{
+            background-color: lightpink;
+        }
+        }
+
+        @media screen and (min-width:1200px){
+           body{
+            background-color: lightsalmon;
+        }
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fluid Grid Example</h1>
+    </header>
+    <main>
+
+        <div  class="row">
+            <div  class="col-lg-3 col-tb-3 col-ml-6">
+               <h4>Article 1</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae laudantium officiis reiciendis adipisci placeat consequatur quas id, illum iste, aliquam laboriosam consectetur quod nobis quia ullam enim saepe ipsum!</p>
+                <button type="submit" class="btn3d-rnd-crnr">SUBMIT</button>
+                <button type="submit">SUBMIT</button>
+            </div>
+            <div  class="col-lg-3 col-tb-6 col-ml-6">
+               <h4>Article 2</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur voluptatibus dolores officia molestiae obcaecati neque porro enim dolore, distinctio, commodi quasi, nesciunt. Veritatis quos cumque delectus, consectetur assumenda. consectetur adipisicing elit. Doloribus non perferendis eos dignissimos, necessitatibus aliquam doloremque id fuga. Suscipit maiores nostrum recusandae a quas aperiam dolorum, sed cum atque maxime?</p>
+            </div>
+            <div  class="col-lg-3 col-tb-3 col-ml-6">
+               <h4>Article 3</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur voluptatibus dolores officia molestiae obcaecati neque porro enim dolore, distinctio, commodi quasi, nesciunt. Veritatis quos cumque delectus, consectetur assumenda. consectetur adipisicing elit. ?</p>
+            </div>
+            <div class="col-lg-3 col-tb-12 col-ml-6">
+                <h4>Related Info</h4>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur voluptatibus dolores officia molestiae obcaecati neque porro enim dolore, distinctio, commodi quasi, nesciunt. Veritatis quos cumque delectus, consectetur assumenda. consectetur adipisicing elit. ?</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

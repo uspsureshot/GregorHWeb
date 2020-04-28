@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href='../../css/freshplate.css' />
+	<link rel="stylesheet" type="text/css" href='../../css/gregor.css' />
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<title>Fresh Plate Form</title>
+</head>
+
+<body>
+<nav>
+
+<button class="btnflat-rnd-crnr"><a href='../../index.html'>Home</a></button>
+		<button class="btnflat-rnd-crnr"><a href='formtest.html'>Form Test</a></button>
+		<button class="btnflat-rnd-crnr"><a href='spaceFresh.html'>Space Fresh</a></button>
+	</nav>
+<main class='centerSection'>
+<h1 class='tx-cntr'> Test form.  Form not functional format only</h1>
+	<form method='post' class='centerSection'> <!-- action='Your providers script URL Here' -->
+
+	<label for='fname' class='tx-right onLeft'>First</label>
+	<input class='field-border-none col-ml-12 col-tb-4 onLeft' type='text' id='fname' name='fname' placeholder='First name' >
+
+	<label class='tx-right onLeft' for='mname'>Middle</label>
+	<input class='field-rnd-crnr col-ml-12 col-tb-4' type='text' id='mname' name='mname' placeholder='Middle name or initial' >
+	<div class='clearFix'></div>
+
+	<label class='tx-right' for='lname'>Last</label>
+	<input class='field-theme-night' type='text' id='lname' name='lname' placeholder='Last Name' >
+
+	<label class='tx-right' for='email'>eMail</label>
+	<input class='field-rnd-crnr field-theme-gray' type='email' id='email' name='email' placeholder='your@email.com' >
+	<div class='clearFix'></div>
+
+
+	<label class='tx-lelt' for='comments'>Comments</label>
+	<div class='clearFix'></div>
+	<textarea class='col-pl-12 col-ml-12 col-tb-6 col-lg-6' id='comments' rows='8' >Comments or Suggestions.</textarea>
+
+	<div class='row col-pl-12 col-ml-12 col-tb-5 col-lg-5'>
+
+	<button class='btn3d onLeft' type="submit" value="Submit">Submit</button>
+	<button class='btnStd onRight btnTinySq' type="reset" value="Clear Form">Clear Form</button>
+	</div>
+	<div class='row col-mp-12 col-ml-12'>
+		<h1 class='tx-cntr'>Buttons and other fields</h1>
+	</div>
+	<div class='row col-pl-12 col-ml-12 col-tb-5 col-lg-5'>
+	<div class='row'><p class='onLeft'>Standard Button</p><p class='onRight'>Tiny Square Btn</p>
+	</div>
+	<button class='btn3d onLeft' type="submit" value="Submit">Submit</button>
+	<button class='btnStd onRight btnTinySq' type="reset" value="Clear Form">Clear Form</button>
+	</div>
+	<div class='row col-mp-1 col-ml-1 col-lg-1'><p>&nbsp;</p></div>
+	<div class='row col-pl-12 col-ml-12 col-tb-5 col-lg-5'>
+		<div class='row'><p class='onLeft'>3d Round Medium</p><p class='onRight'>Flat Button Standard</p>
+	</div>
+
+	<button class='btnStd btn3d-rnd onLeft btnMed' type="submit" value="Submit">Submit</button>
+
+	<button class='btnFlat onRight' type="reset" value="Clear Form">Clear Form</button>
+	</div>
+
+	<div class='row col-pl-12 col-ml-12 col-tb-12 col-lg-12'>
+	<div class='row'><p class='onLeft'>3d Round Corner Large</p><p class='onRight'>Flat Button Huge</p>
+	</div>
+	<button class='onLeft btn3d-rnd-crnr btnLrg' type="submit" value="Submit">Submit</button>
+
+	<button class='btnFlat-rnd-crnr onRight btnHuge' type="reset" value="Clear Form">Clear Form</button>
+		</div>
+<div class='row col-mp-12 col-ml-12 col-tb-12 col-lg-12 clearFix'>
+<input type='radio' name='radio1' value='Selector1' checked> Selector 1<br>
+	<input type='radio' name='radio1' value='Selector2'> Selector 2<br>
+<p>Slide</p>
+<label class="switch">
+  <input type="checkbox">
+  <div class="slider"></div>
+</label>
+<label class="switch">
+  <input type="checkbox" checked>
+  <div class="slider round"></div>
+</label>
+<label class="switchTiny">
+  <input type="checkbox">
+  <div class="sliderTiny"></div>
+</label>
+<label class="switchTiny">
+  <input type="checkbox" checked>
+  <div class="sliderTiny round"></div>
+</label>
+</div>
+	</form>
+	</main> <!--end main section -->
+</body>
+</html>

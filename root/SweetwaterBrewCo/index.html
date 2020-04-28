@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sweetwater Brewing Co</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="../css/freshplate.css" type="text/css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <style>
+
+    </style>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="scripts/freshplate.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="side_nav " style="left: -500px;">
+            <div class="side_nav_close"></div>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="pages/about.html">ABOUT</a></li>
+                <li><a href="pages/menu.html">MENU</a></li>
+                <li><a href="pages/events.html">EVENTS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <a class="menu side_nav_btn"><i class="material-icons">&#xE5D2;</i></a>
+        <h1 class="fineHead parallax-header">Sweetwater Brewing Co.</h1>
+        <div class="parallax1">
+            <div class="row boxClearSm">
+                <h3 class="casualHead">Combining delicious food and great beer</h3>
+                <p>Sweetwater Brewing is the best place for all your craft beer cravings! You find delectable appetizers, gourmet entrees, and a rotating selection of beers on tap in a gorgeous, swanky atmosphere. You'll be sure to leave us in better spirits.</p>
+            </div>
+            <div class="row boxClearSm">
+                <div class="col-lg-4 col-tb-4 col-ml-12 bfe-btn">
+                    <a href="pages/menu.html#beer-list">Beer</a>
+                </div>
+                <div class="col-lg-4 col-tb-4 col-ml-12 bfe-btn">
+                    <a href="pages/menu.html">Food</a>
+                </div>
+                <div class="col-lg-4 col-tb-4 col-ml-12 bfe-btn">
+                    <a href="pages/events.html">Events</a>
+                </div>
+            </div>
+        </div>
+        <div class="parallax6">
+            <div class="row boxClearLg">
+                <div class="col-lg-4 col-tb-4 col-ml-12">
+                    <h3 class="fineHead">Contact</h3>
+                    <p>9045 Carroll Way</p>
+                    <p>San Diego, CA 92121</p>
+                    <p>858.790.6901</p>
+                    <p>contact@swbc.com</p>
+                </div>
+                <div class="col-lg-4 col-tb-4 col-ml-12">
+                    <img src="images/beericon.png" alt="beer mug sketch" class="beer-icon noPrint">
+                </div>
+                <div class="col-lg-4 col-tb-4 col-ml-12">
+                    <h3 class="fineHead">Keep In Touch</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Untapped</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row boxClearLg">
+                <section class="fineHead">
+                    <h2>Photo Gallery</h2>
+                    <article>
+                        <ul id="instaFeed">
+
+                        </ul>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h5 class="fineHead">Sherry Guo &copy; 2017</h5>
+        <h6>This site was made using the <a href="http://freshplate.servicefocuseddesign.com">Freshplate</a> framework.</h6>
+    </footer>
+
+
+    <script>
+        $(document).ready(function () {
+            var token = '4654843072.1677ed0.ae0e0047d0c24c6fb801e2fab6e2f360',
+                userid = 4654843072,
+                numPhotos = 20;
+
+            $.ajax({
+                url: 'https://api.instagram.com/v1/users/' + userid + '/media/recent/',
+                dataType: 'jsonp',
+                type: 'GET',
+                data: {
+                    access_token: token,
+                    count: numPhotos
+                },
+                success: function (data) {
+                    console.log(data);
+                    for (x in data.data) {
+                        $('#instaFeed').append('<li><a href="' +
+                            data.data[x].link + '"><img src="' + data.data[x].images.thumbnail.url + '"/></a></li>');
+                    }
+                },
+                error: function (data) {
+                    console.log(data);
+                }
+            })
+        }); // end doc ready
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+/*// User CSS file  Outside of Frame work*/
+a[type='button'] {
+	display:inline-block;
+	padding: 15px;
+	margin: .3em;
+	font: bolder 1.2em/1.2 $robot;
+	&:hover {
+	background-color: $btnHover;
+	}
+	&:active {
+		color: $anchorLit;
+		background-color: $btnActive;
+		border: solid 2px $btnBrdrLite;
+	}
+}
+aside.notMobile {
+	display:none
+}
+
+body {
+background: #111;
+}
+
+html {
+	background: #111;
+}
+.parallax {
+	background-color: #000;
+}
+
+.bgcW90pct {
+	background:rgba(255,255,255,.9)
+}
+responsive_nav {
+	z-index: 5;
+}
+.bgcW70pct {
+	background:rgba(255,255,255,.7)
+}
+.bgcW40pct {
+	background:rgba(255,255,255,.4)
+}
+.container, .w1024 {
+	max-width:1024px;
+	background:rgba(255,255,255, .9);
+}
+.iRed {
+	color: #d40f0f;
+	font-style: italic;
+}
+
+article, #calendar {
+	padding:0 1em;
+
+}
+
+fieldset {
+	margin-top:2em;
+	background: rgba(255,255,255, .7)}
+legend {
+	background:rgba(255,255,255,.9);
+	border-top-left-radius: 5px;
+	border-top-right-radius:  5px;
+
+}
+  form label {
+    margin: .2em .2em;
+    padding: .4em;
+    vertical-align: middle;
+    text-align: right;
+}
+form textarea {
+			display: block;
+            margin:.5em auto;
+            width: 80%;
+
+			}
+.spacer {
+	display: none;
+}
+
+#thankYou .reverseTransparent {
+ 	top: 75px;
+
+}
+
+
+#thankYou aside {
+	margin:30% auto 0;
+	WIDTH: 70%;
+}
+
+ aside#RtHnd {
+
+	color: #6f2121;
+	border: solid 5px #6f2121;
+	border-radius: 1em;
+	padding: 1em;
+	background: rgba(255, 255, 255, 0.7);
+
+}
+div#HighFlight {
+	position: relative;
+}
+
+.hng-p:first-line {
+               font-weight: bold;
+               font-style: italic;
+}
+.hng-p {
+   padding-left: 3rem;
+   text-indent:-2rem;
+}
+ul.hng-lst {
+               width:80%;
+               margin-left:4rem;
+}
+ul.hng-lst li {
+
+               text-indent: -2.5rem;
+}
+
+footer {
+	padding: .5rem 2rem;
+	color: #333;
+	background: #fff;
+}
+#ftr2 {
+	padding: 0 auto;
+}
+.reverseTransparent {
+	top: 5px;
+	padding: 50px;
+    width: 90%;
+	}
+	.stayOpen {
+		height: 100vh;
+	}
+@media screen and (min-width:600px) {
+
+}
+@media screen and (min-width:768px) {
+	.stayOpen {
+		height: auto;
+	}
+aside.notMobile {
+	display: block;
+}
+	.reverseTransparent {
+	padding: 15px;
+    width: 90%;
+	top: 15px;
+    left: 5%;
+	}
+	aside#RtHnd {
+		float:right;
+		background: rgba(255, 255, 255, 0.4);
+		margin-right: 20px	;
+
+
+	}
+	#heroImg .parallax{
+		background-image: url('../images/background.jpg');
+	}
+	#contactForm .parallax {
+		background-image: url(../images/Extrasolar_planet_NASA3.jpg);
+	}
+	#thankYou {
+		background: url(../images/NeptunTriton2006..png) top center;
+		height:90vh;
+		color: rgba(255,255,255, .7);
+
+	}
+
+	.container .parallax {
+		background-image: url(../images/Atlas1024x1365.jpg);
+		background-position: top;
+	}
+	.container {
+		padding-top: 3em;
+		background-color: transparent;
+	}
+
+}
+@media screen and (min-width:1200px) {
+.reverseTransparent {
+	padding: 50px;
+    width: 75%;
+	top: 25px;
+    left: 12.5%;
+	}
+}
+

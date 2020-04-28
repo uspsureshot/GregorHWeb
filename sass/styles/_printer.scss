@@ -1,0 +1,36 @@
+@media print {
+	header[role="banner"],footer, nav {
+        display: none;
+    }
+    main, article {
+        width: 90%;
+        margin: 0px;
+        padding: 0px;
+    }
+    html, body {
+		font: normal 1em serif;
+        color: #000;    
+        background-color: transparent;
+        -webkit-box-shadow:none;
+        box-shadow:none;
+        text-shadow:none;
+    }
+	a {
+		font: italic 1em 'Times New Roman', Times, serif;
+		color: #666;
+	}
+    a:after { //prints the actual URL after the anchor
+        content: "( "attr(href)" )";
+    }
+	
+	section.printOnly {
+		display: block;
+		width: 90%;
+		position: absolute;
+		bottom: 0;
+	}
+    
+    .noPrint {
+        display:none;
+    }
+} //end Print media query

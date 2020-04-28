@@ -1,0 +1,277 @@
+/** colors used
+muted blue: rgb(39, 50, 65)
+dark gray: rgb(38, 37, 38)
+dark bright blue: rgb(14, 81, 138)
+brown: rgb(114, 71, 50)
+off white: rgb(244, 222, 208)
+**/
+
+@import url('https://fonts.googleapis.com/css?family=Candal');
+
+/** global styles **/
+
+html {
+    background: url(../images/pink-dust-bg.png);
+}
+
+body {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+p {
+    padding: 0;
+}
+
+.boxClearSm {
+    background-color: rgb(38, 37, 38);
+    opacity: .85;
+    color: rgb(244, 222, 208);
+    text-align: center;
+    padding: 3em 2em;
+    border: 1px solid rgb(114, 71, 50);
+    width: 60%;
+    margin: 0 auto;
+}
+
+.boxClearLg {
+    background-color: rgb(38, 37, 38);
+    opacity: .85;
+    color: rgb(244, 222, 208);
+    text-align: center;
+    padding: 3em 2em;
+    border: 1px solid rgb(114, 71, 50);
+    width: 75%;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: rgb(38, 37, 38);
+    color: rgb(244, 222, 208);
+    text-align: center;
+    padding: .5em;
+}
+
+
+/** collapsible side nav **/
+
+.menu {
+    /** navigation bar on top of screen **/
+    font-size: 1em;
+    background-color: rgb(114, 71, 50);
+    padding: 1em;
+    display: block;
+    cursor: pointer;
+}
+
+.side_nav {
+    background-color: rgb(39, 50, 65);
+    font-size: 1.5em;
+    padding: 6em 1em;
+}
+
+@media screen and (min-width: 1200px) {
+    .menu {
+        display: none;
+    }
+    .side_nav {
+        left: 0px;
+        width: 250px;
+        height: 400px;
+        margin-left: 40%;
+        font-size: 1em;
+        padding-top: 3.75em;
+    }
+    .side_nav a {
+        padding: 8% 0;
+    }
+    .side_nav_close:after {
+        display: none;
+    }
+}
+
+
+/** page specific styles **/
+
+.quote-box {
+    display: none;
+}
+
+.quote {
+    text-align: center;
+    font-size: 3em;
+}
+
+@media screen and (min-width: 680px) {
+    .quote-box {
+        display: block;
+        padding: 2em;
+        /** styles quote spacing on about.html **/
+    }
+    .quote {
+        text-align: center;
+        font-size: 3em;
+    }
+}
+
+.bfe-btn a {
+    /** styles beer food events buttons on home page **/
+    color: rgb(14, 81, 138);
+    font-size: 3em;
+    font-family: 'Candal', sans-serif;
+    margin-top: 3em;
+}
+
+.bfe-btn a:hover {
+    color: rgb(244, 222, 208);
+}
+
+.beer-icon {
+    display: none;
+}
+
+@media screen and (min-width: 750px) {
+    .beer-icon {
+        width: auto;
+        height: 100px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+/** menu tabs on menu page **/
+
+#tabs li {
+    display: inline-block;
+    margin-bottom: 1em;
+    padding: 0;
+}
+
+#tabs li a {
+    padding: 1em;
+    color: coral;
+}
+
+#tabs li a:hover {
+    background-color: blanchedalmond;
+}
+
+.tab-content {
+    background-color: rgb(244, 222, 208);
+    padding: 0;
+    color: rgb(38, 37, 38);
+}
+
+.appetizers th:nth-child(2),
+.appetizers td:nth-child(2),
+.entrees th:nth-child(2),
+.entrees td:nth-child(2),
+.beer-list td:nth-child(3),
+.beer-list th:nth-child(3) {
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+    #tabs li {
+        padding: .5em;
+    }
+    #tabs li a {
+        border-bottom: 2px solid #fff;
+    }
+    .tab-content {
+        padding: .5em;
+    }
+    .appetizers th:nth-child(2),
+    .appetizers td:nth-child(2),
+    .entrees th:nth-child(2),
+    .entrees td:nth-child(2),
+    .beer-list td:nth-child(3),
+    .beer-list th:nth-child(3) {
+        display: block;
+    }
+}
+
+
+/** parallax specific styles **/
+
+@media screen and (min-width: 768px) {
+    .parallax1 {
+        background: url(../images/restaurant-vintage-table.jpg) no-repeat center center fixed;
+        width: 100%;
+        padding: 300px 0;
+        min-height: 500px;
+    }
+    .parallax2 {
+        background: url(../images/beer-glass-lg.jpg) no-repeat center center fixed;
+        width: 100%;
+    }
+    .parallax3 {
+        background: url(../images/food-on-tray.jpeg) no-repeat center center fixed;
+        width: 100%;
+        padding: 400px 0;
+    }
+    .parallax4 {
+        background: url(../images/sparklers.jpeg) no-repeat center center fixed;
+        width: 100%;
+        padding: 400px 0;
+    }
+    .parallax5 {
+        background: url(../images/celebration.jpeg) no-repeat center center fixed;
+        width: 100%;
+        padding: 300px 0;
+    }
+    .parallax6 {
+        background: url(../images/bottlesunset-lg.jpg) no-repeat center center fixed;
+        width: 100%;
+        padding: 300px 0;
+        overflow: scroll;
+    }
+    .parallax7 {
+        background: url(../images/nature-field-grain.jpg) no-repeat center center fixed;
+        width: 100%;
+        padding: 300px 0;
+    }
+}
+
+.parallax-header {
+    background-color: rgb(38, 37, 38);
+    opacity: .75;
+    color: rgb(244, 222, 208);
+    text-align: center;
+    width: 100%;
+}
+
+
+/** form and tables **/
+
+legend {
+    background-color: rgb(244, 222, 208);
+}
+
+form fieldset {
+    padding: .5em;
+}
+
+table {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/** instagram feed **/
+
+#instaFeed li {
+    list-style-type: none;
+    display: inline-block;
+    margin: .75em;
+}
+
+#instaFeed img {
+    padding: .25em;
+    border: solid 1px #ccc;
+}
+
+.popUpContainer {
+    overflow: hidden;
+}

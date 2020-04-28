@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FreshPlate Instagram</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="../css/freshplate.css" type="text/css" rel="stylesheet" />
+    
+    <link href="../css/mystyles.css" type="text/css" rel="stylesheet" />
+    
+    <script
+     src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  
+  <link href="../images/faviconPlate.png" rel="icon" type="image/png">
+  </head>
+  
+<body>
+ 
+   <header id="top">
+    <section id="header" class="centerSection">
+    <a href="../index.html"><img class="responsiveImg pagesImg" src="../images/FP-logo-white.png" alt="logo" /></a>
+    </section>
+    </header>
+     
+      <nav >
+       <div class="responsive_nav_icon"></div>
+      <ul class="responsive_nav" >
+            <li><a href="../index.html" class="active_nav">HOME</a></li>
+            <li><a href="about.htm">ABOUT</a></li>
+            <li><a href="demos.html">DEMOS</a></li>
+            <li><a href="documents.html">DOCUMENTATION</a></li>
+            <li><a href="instagram.html">ADD INSTAGRAM</a></li>
+            <li><a href='https://freshplateweb.wordpress.com/' target='_blank'>Fresh Plate News</a></li>
+            <li><a href="pages/contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <section id="main" class="centerSection" >
+    <img src="../images/instagramCap-01.JPG" class="responsiveImg pageHead" alt="gallery" />
+    <h1 class="fineHead">Adding an Instagram feed to your page</h1>
+     <h5>Adding an Instagram feed to any webpage you've created in FreshPlate is as easy as 1,2,3.</h5>
+     
+     <p class="bold">1) Start by adding these styles to your own CSS:</p>
+     
+	<p><code>#instaFeed li {<br/>list-style-type: none;<br/>display: inline-block;<br/>     margin: .75em;<br/>}<br/>#instaFeed img {<br/>padding: .25em;<br/>          border: solid 1px #ccc;<br/>}</code></p>
+      
+      <p>You will not need the following header 
+h1 style if you are using the optional class "reverseTransparent" 
+         as in the html below:</p>
+      
+    
+	<p><code>#instaFeed header h1 {<br/>text-align: center;<br/>}</code></p>
+   
+    <p class="bold">2) Paste the code below into your page where you'd like to display the Instagram feed.</p>
+    <p><code>
+     &lt;section class=&quot;fineHead reverseTransparent&quot;&gt;<br/>       &lt;!--  the classes applied to the section are optional --&gt;<br/>       <br/>        &lt;header&gt;<br/>            &lt;h1&gt;Instagram Title&lt;/h1&gt;<br/>        &lt;/header&gt;<br/>        <br/>        &lt;article&gt;<br/>            &lt;ul id=&quot;instaFeed&quot;&gt;<br/>                <br/>            &lt;/ul&gt;<br/>        &lt;/article&gt;     <br/>    &lt;/section&gt;</code></p>
+     <p class="bold">3) Obtain an Instagram user id and access token. Place them in the jQuery script snippet below after you've pasted it into your page. Since the user id is numeric, not a string, it doesn't need quotes:</p>
+		<p><code>&lt;script&gt;<br/>       $(document).ready(function(){<br/>            var token = 'PLACE YOUR INSTAGRAM ACCESS TOKEN HERE BETWEEN THE SINGLE QUOTES',<br/>                userid = PLACE YOUR INSTAGRAM USER ID HERE WITHOUT QUOTES,<br/>                numPhotos = 20;<br/>                   <br/>            $.ajax({<br/>                url:'https://api.instagram.com/v1/users/' + userid + '/media/recent/',<br/>                dataType: 'jsonp',<br/>                type: 'GET',<br/>                data: {access_token:token,<br/>                      count:numPhotos},<br/>                success:function(data){<br/>                    console.log(data);<br/>                    for(x in data.data){<br/>                        $('#instaFeed').append('&lt;li&gt;&lt;a href=&quot;'+ <br/>                            data.data[x].link +'&quot;&gt;&lt;img src=&quot;'+ data.data[x].images.thumbnail.url + '&quot;/&gt;&lt;/a&gt;&lt;/li&gt;');<br/>                    }<br/>                },<br/>                error: function(data){<br/>                    console.log(data);<br/>                }<br/>            })<br/>        });  //  end doc ready<br/>    &lt;/script&gt;</code></p> 
+    
+      <p class="bold"><code>numPhotos</code> is the number of photos from the feed that you want to display; we've set it to 20.</p>
+      <p>Whether you use <code>reverseTransparent</code> or choose to use no additional classes, you now have a responsive Instagram gallery on your page that will update when your account updates.</p>
+      
+      	<div class="instaMobile">
+      		<img src="../images/instagramCap-03.JPG" class="responsiveImg" alt="mobile instagram" />
+      	
+     </div>
+    </section>
+    <footer class="casualHead"><h6>&copy; 2017 | FreshPlate</h6></footer>
+    <script type="text/javascript" src="../scripts/freshplate.js"></script>
+
+    </body>

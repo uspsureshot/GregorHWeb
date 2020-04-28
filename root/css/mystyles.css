@@ -1,0 +1,89 @@
+nav {
+    margin-bottom: 2px;
+}
+figure {
+	padding: 15px;
+	border: solid 1px #333;
+	margin: 12px;
+}
+footer {
+    background-color: chocolate;
+    padding: 20px;
+}
+footer h6 {
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+
+#top {
+          background-color: #556B2F;
+          padding: 1%;
+}
+#header {
+          max-width: 1140px;
+          height: auto;
+          color: black;
+          padding-bottom: 20px;
+}
+
+#tagline {
+          padding:15px 1rem;
+          text-align: center;
+
+}
+#main {
+    max-width: 1140px;
+    padding: 2%
+}
+#mainDocs {
+    max-width: 760px;
+    padding: 2%
+}
+.btnHuge {
+    color: #e4b363;
+    font-size: 2rem;
+    margin: 0 25%;
+}
+.cloud {
+    vertical-align: text-bottom;
+
+}
+.btnHuge:hover {
+    color: #333;
+}
+.instaMobile {
+	max-width: 369px;
+	margin: 10px auto 0;
+}
+.demo {
+	margin-top: 12px;
+}
+.hm {
+    margin-left: 1.5rem;
+}
+.home {
+	color: #FF6347;
+	display: block;
+	text-align: center;
+	font-size: 48px;
+	padding: 8px;
+}
+.pageHead {
+	padding-bottom: 8px;
+}
+.pagesImg {
+    display: block;
+    max-height: 100px;
+    padding-top: 20px;
+    width: auto;
+
+}
+.thanks {
+	position: relative;
+	height: 422px;
+	max-width: 750px;
+	background-image: url(../images/perfect-retro-cabin-room.jpg);
+	margin: 0 auto;
+}

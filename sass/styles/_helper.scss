@@ -1,0 +1,129 @@
+/* Helper classes for the framework */
+/*Float classes*/
+.onLeft{
+    float:left;
+}
+
+.onRight{
+    float:right;
+}
+/* Utility Classes */
+.clearFix{
+    clear: both;
+}
+
+// Font classes
+.casualHead {
+    font-family: $robot;
+}
+.fineHead {
+    font-family: $yesterYr;
+    h1 {
+    font-size: 4.5rem;
+    padding: 5px 0;
+  }
+}
+
+// Special Text-String Styles
+.italic {
+  font-style: italic;
+}
+.bold {
+    font-weight: 700;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+/*  alignment styles and more  */
+.tx-cntr {
+    text-align: center;
+}
+.tx-left {
+    text-align: left;
+}
+.tx-right {
+    text-align: right;
+}
+/* Scroll to top of page */
+.btn_top{
+    position: fixed;
+    top:90%;
+    right: 0;
+    z-index: 99;
+    border: solid 1px;;
+    outline: none;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+    padding: .3em;
+    border-radius: 50%;
+    font-size: 1.2rem;
+}
+
+
+/* Specialty Presentation styles */
+.reverseTransparent {
+    color: rgba(255,255,255,.9);
+    background-color: rgba(0,0,0,.4);
+    text-align: center;
+    vertical-align: middle;
+    padding: 50px;
+    border: 1px solid rgba(255,255,255,.9);
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    position: absolute;
+    top: 25px;
+    left: 12.5%;
+    p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.6rem;
+    }
+}
+
+.hng-p {
+   padding-left: 3rem;
+   text-indent:-2rem;
+    &:first-line {
+               font-weight: bold;
+               font-style: italic;
+}
+}
+ul.hng-lst, ol.hng-lst {
+   width:80%;
+   margin-left:4rem;
+    li {
+       text-indent: -2.5rem;
+}
+}
+
+.centerSection {
+  margin: 0 auto;
+}
+
+/*Responsive Image */
+.responsiveImg{max-width:100%;height:auto;}
+
+/* Helper class to not display the element on mobile devices */
+.notMobile {
+    display:none
+}
+
+/**Media Queries **/
+@media screen and (min-width:768px){
+    
+    .btn_top {
+        top: 88%;
+        right: 5%;
+    }
+    
+    .notMobile {
+        display: block;
+    }
+}

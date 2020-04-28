@@ -1,0 +1,39 @@
+// Fresh Plate Normalize
+
+html {
+	font-size: 10px;
+	line-height: 1.4; /*Set default line spacing*/
+	-ms-text-size-adjust: 100%; /*Font fix for Windows phones when swapping  disply portait v landscape*/
+	-webkit-text-size-adjust: 100%;  /*Font fix for IOS phonds when swapping  disply portait v landscape*/
+}
+
+/*IE 9 Display type fix */
+article, aside, audio, blockquote, body, figcaption, figure, footer, h1, h2, h3, h4, h5, h6, header, nav, p, section, main, video, ul, ol, div, section {
+	display: block;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  color: #444;
+}
+
+hr {
+  box-sizing: content-box; /*Firefox display fix */
+	/*fix Horizontal Rule display in IE/Edge */
+  height: 0;
+  overflow: visible;
+}
+
+/* IE 10 Hidden vs None display type fix */
+[hidden] {
+  display: none;
+}
+	// A generic section class to be used for an area that will only show when printerd.
+section.printOnly {
+	display:none;
+
+}
+
