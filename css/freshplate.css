@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:700,700i,900,900i");
 @import url("https://fonts.googleapis.com/css?family=Yesteryear");
 html {
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.4;
   /*Set default line spacing*/
   -ms-text-size-adjust: 100%;
